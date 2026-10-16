@@ -463,4 +463,901 @@ section{
 .skill{
     padding:12px 16px;
     border-radius:30px;
-    background:#101f
+    background:#101f33;
+    border:1px solid rgba(255,255,255,0.08);
+    color:#d9e4f1;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* =========================
+   ACHIEVEMENTS
+========================= */
+
+.achievement-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.achievement{
+    background:#0c1a2c;
+    border:1px solid rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:16px;
+}
+
+.achievement-icon{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.achievement h3{
+    font-size:19px;
+    margin-bottom:8px;
+}
+
+.achievement p{
+    color:#9fb0c5;
+    font-size:14px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    background:
+    radial-gradient(circle at 80% 20%, rgba(245,199,107,0.12), transparent 35%),
+    #07111f;
+}
+
+.contact-box{
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:40px;
+    background:rgba(255,255,255,0.03);
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact-info p{
+    color:#9fb0c5;
+    margin:12px 0;
+}
+
+.contact-info strong{
+    color:#f5c76b;
+}
+
+.contact-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:25px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    padding:30px 0;
+    text-align:center;
+    color:#71839a;
+    font-size:13px;
+    border-top:1px solid rgba(255,255,255,0.07);
+}
+
+/* =========================
+   FLOATING WHATSAPP
+========================= */
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#168b52;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.4);
+    z-index:2000;
+    transition:0.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.08);
+}
+
+.whatsapp-float svg{
+    width:30px;
+    height:30px;
+    fill:white;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .hero{
+        padding:65px 0 50px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .metrics{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .metric{
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+
+    .about-grid,
+    .contact-grid,
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    .achievement-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .section-heading h2{
+        font-size:34px;
+    }
+}
+
+@media(max-width:520px){
+
+    .container{
+        width:92%;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero-subtitle{
+        font-size:17px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .metrics{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .metric-number{
+        font-size:27px;
+    }
+
+    .metric-label{
+        font-size:11px;
+    }
+
+    .contact-box{
+        padding:25px;
+    }
+
+    .profile-card img{
+        max-width:280px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="container navbar">
+
+<div class="logo">
+Manoranjan Singh.
+</div>
+
+<ul class="nav-links">
+
+<li>
+<a href="#about">About</a>
+</li>
+
+<li>
+<a href="#projects">Projects</a>
+</li>
+
+<li>
+<a href="#career">Career</a>
+</li>
+
+<li>
+<a href="#expertise">Expertise</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="badge">
+Power Transmission Professional
+</div>
+
+<h1>
+Powering India's Grid.<br>
+<span>Building What Matters.</span>
+</h1>
+
+<p class="hero-subtitle">
+AGM / Chief Project Manager with 28+ years of experience
+in Power Transmission, EPC and TBCB projects across
+132 kV, 220 kV, 400 kV and 765 kV transmission systems.
+</p>
+
+<div class="hero-buttons">
+
+<a
+class="btn primary"
+href="#projects"
+id="exploreProjects">
+Explore Projects →
+</a>
+
+<a
+class="btn"
+href="./Manoranjan_Singh_Resume.pdf"
+target="_blank"
+rel="noopener">
+Download Resume
+</a>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/919456044444?text=Hello%20Manoranjan%20Sir%2C%20I%20visited%20your%20professional%20portfolio."
+target="_blank"
+rel="noopener">
+WhatsApp Me
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PROFILE -->
+
+<div class="profile-card">
+
+<img
+src="./manoranjan-profile.jpg"
+alt="Manoranjan Singh"
+onerror="this.style.display='none';">
+
+<div class="profile-name">
+Manoranjan Singh
+</div>
+
+<div class="profile-role">
+AGM / Chief Project Manager
+</div>
+
+<div class="profile-role">
+Power Transmission & EPC
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     METRICS
+========================= -->
+
+<section class="metrics-section">
+
+<div class="container">
+
+<div class="metrics">
+
+<div class="metric">
+
+<div class="metric-number">
+28+
+</div>
+
+<div class="metric-label">
+Years Experience
+</div>
+
+</div>
+
+
+<div class="metric">
+
+<div class="metric-number">
+25+
+</div>
+
+<div class="metric-label">
+Lines Energized
+</div>
+
+</div>
+
+
+<div class="metric">
+
+<div class="metric-number">
+₹950 Cr+
+</div>
+
+<div class="metric-label">
+Project Portfolio
+</div>
+
+</div>
+
+
+<div class="metric">
+
+<div class="metric-number">
+765 kV
+</div>
+
+<div class="metric-label">
+Highest Voltage Exposure
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="section-kicker">
+Executive Profile
+</div>
+
+<h2>
+Project Leadership with Field Execution Strength
+</h2>
+
+<p>
+A transmission project professional focused on safe execution,
+quality, productivity, stakeholder coordination and timely
+commissioning of major power infrastructure.
+</p>
+
+</div>
+
+
+<div class="about-grid">
+
+<div class="about-text">
+
+<p>
+I am a Power Transmission professional with extensive experience
+in execution and project management of high-voltage transmission
+line and substation projects.
+</p>
+
+<p>
+My experience covers project planning, construction management,
+ROW coordination, contractor management, material management,
+T&P planning, quality assurance, safety management and
+commissioning activities.
+</p>
+
+<p>
+I have worked across multiple voltage levels including
+132 kV, 220 kV, 400 kV and 765 kV, with exposure to
+large-scale EPC and TBCB transmission projects.
+</p>
+
+</div>
+
+
+<div class="highlight-box">
+
+<h3>
+Core Leadership Focus
+</h3>
+
+<ul class="highlight-list">
+
+<li>Project Planning & Execution</li>
+
+<li>Transmission Line Construction</li>
+
+<li>ROW & Land Coordination</li>
+
+<li>Contractor & Vendor Management</li>
+
+<li>Safety & Quality Management</li>
+
+<li>Material & T&P Management</li>
+
+<li>Cost & Productivity Control</li>
+
+<li>Stakeholder Coordination</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section id="projects" class="projects">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="section-kicker">
+Selected Projects
+</div>
+
+<h2>
+Major Transmission Experience
+</h2>
+
+<p>
+Selected projects representing experience in high-voltage
+transmission line construction, EPC execution and TBCB projects.
+</p>
+
+</div>
+
+
+<div class="project-grid">
+
+
+<!-- PROJECT 1 -->
+
+<div class="project-card">
+
+<span class="project-tag">
+CURRENT
+</span>
+
+<h3>
+NES Dharashiv Transmission Limited
+</h3>
+
+<p>
+TBCB Transmission Project covering major transmission
+infrastructure around Beed, Dharashiv and Washi in Maharashtra.
+</p>
+
+<div class="project-company">
+Montecarlo Limited
+</div>
+
+</div>
+
+
+<!-- PROJECT 2 -->
+
+<div class="project-card">
+
+<span class="project-tag">
+765 kV
+</span>
+
+<h3>
+KPS-III – Lakadia Transmission Line
+</h3>
+
+<p>
+765 kV D/C transmission line project involving tower erection,
+stringing, construction management, material coordination,
+T&P planning and field execution.
+</p>
+
+<div class="project-company">
+Jyoti Structures Limited
+</div>
+
+</div>
+
+
+<!-- PROJECT 3 -->
+
+<div class="project-card">
+
+<span class="project-tag">
+MPPTCL
+</span>
+
+<h3>
+M.P. Power Transmission Project – Package 2
+</h3>
+
+<p>
+Transmission project involving execution across multiple
+sections including Gwalior, Begumganj, Chhindwara and Jabalpur.
+</p>
+
+<div class="project-company">
+Transmission Line Execution
+</div>
+
+</div>
+
+
+<!-- PROJECT 4 -->
+
+<div class="project-card">
+
+<span class="project-tag">
+₹950 Cr+
+</span>
+
+<h3>
+Bihar Transmission Projects
+</h3>
+
+<p>
+Large transmission project portfolio with responsibility for
+planning, execution, construction coordination and project
+delivery.
+</p>
+
+<div class="project-company">
+Project Management & Execution
+</div>
+
+</div>
+
+
+<!-- PROJECT 5 -->
+
+<div class="project-card">
+
+<span class="project-tag">
+DFCC
+</span>
+
+<h3>
+DFCC Transmission Line Package
+</h3>
+
+<p>
+Transmission infrastructure execution with focus on
+construction, safety, quality and commissioning coordination.
+</p>
+
+<div class="project-company">
+Transmission Infrastructure
+</div>
+
+</div>
+
+
+<!-- PROJECT 6 -->
+
+<div class="project-card">
+
+<span class="project-tag">
+HVDC
+</span>
+
+<h3>
+765 kV / ±800 kV HVDC Exposure
+</h3>
+
+<p>
+Professional exposure to ultra-high-voltage transmission
+systems and complex power transmission infrastructure.
+</p>
+
+<div class="project-company">
+High Voltage Transmission
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CAREER
+========================= -->
+
+<section id="career">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="section-kicker">
+Career Journey
+</div>
+
+<h2>
+Professional Experience
+</h2>
+
+<p>
+Progressive leadership responsibilities across transmission
+construction, EPC and project management roles.
+</p>
+
+</div>
+
+
+<div class="timeline">
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">
+June 2026 – Present
+</div>
+
+<h3>
+AGM / Chief Project Manager
+</h3>
+
+<p>
+Montecarlo Limited – NES Dharashiv Transmission Limited
+TBCB Project, Maharashtra.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">
+April 2025 – May 2026
+</div>
+
+<h3>
+AGM – Projects
+</h3>
+
+<p>
+Jyoti Structures Limited – 765 kV D/C KPS-III –
+Lakadia Transmission Line Project.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">
+December 2022 – March 2025
+</div>
+
+<h3>
+Senior Manager – Projects
+</h3>
+
+<p>
+Transmission project execution, construction management,
+planning and field coordination.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">
+2019 – 2022
+</div>
+
+<h3>
+Project Management & Execution
+</h3>
+
+<p>
+Associated Power Structures – transmission infrastructure
+execution and project responsibilities.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<div class="timeline-dot"></div>
+
+<div class="timeline-year">
+2017 – 2019
+</div>
+
+<h3>
+Project Execution
+</h3>
+
+<p>
+EMCO Limited – transmission project execution and
+construction management responsibilities.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EXPERTISE
+========================= -->
+
+<section id="expertise" class="expertise">
+
+<div class="container">
+
+<div class="section-heading">
+
+<div class="section-kicker">
+Technical Expertise
+</div>
+
+<h2>
+Transmission & Project Management Capabilities
+</h2>
+
+</div>
+
+
+<div class="expertise-grid">
+
+<div class="skill">
+765 kV Transmission
+</div>
+
+<div class="skill">
+400 kV Transmission
+</div>
+
+<div class="skill">
+220 kV Transmission
+</div>
+
+<div class="skill">
+132 kV Transmission
+</div>
+
+<div class="skill">
+TBCB Projects
+</div>
+
+<div class="skill">
+EPC Project Management
+</div>
+
+<div class="skill">
+Tower Erection
+</div>
+
+<div class="skill">
+Conductor Stringing
+</div>
+
+<div class="skill">
+Foundation Construction
+</div>
+
+<div class="skill">
+ROW Management
+</div>
+
+<div class="skill">
+Land & Crop Compensation
+</div>
+
+<div class="skill">
+Contractor Management
+</div>
+
+<div class="skill">
+Material Management
+</div>
+
+<div class="skill">
+T&P Management
+</div>
+
+<div class
