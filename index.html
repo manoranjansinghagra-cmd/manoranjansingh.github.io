@@ -4,1000 +4,1245 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Manoranjan Singh | AGM / Chief Project Manager | Power Transmission</title>
+<title>Manoranjan Singh | Power Transmission Project Leader</title>
 
-<meta name="description" content="Manoranjan Singh - AGM / Chief Project Manager with 28+ years of experience in power transmission, TBCB, EPC, 765 kV, 400 kV, 220 kV, 132 kV and ±800 kV HVDC projects.">
-<meta name="keywords" content="Manoranjan Singh, Transmission Project Manager, TBCB, EPC, 765kV, HVDC, Power Transmission, AGM Projects, Chief Project Manager">
+<meta name="description" content="Manoranjan Singh – Power Transmission Project Leader with 28+ years of experience in EPC, TBCB, 765 kV, 400 kV, 220 kV, 132 kV and ±800 kV HVDC transmission projects.">
 <meta name="author" content="Manoranjan Singh">
 
 <style>
-:root{
-  --bg:#07111f;
-  --bg2:#0b1728;
-  --card:#101e31;
-  --card2:#14263d;
-  --text:#f5f7fb;
-  --muted:#aab7c8;
-  --gold:#d8ad58;
-  --gold2:#f0cf82;
-  --blue:#55a9ff;
-  --green:#20b66b;
-  --line:rgba(255,255,255,.10);
-  --shadow:0 20px 55px rgba(0,0,0,.28);
-}
 
-body.light{
-  --bg:#f4f7fb;
-  --bg2:#ffffff;
-  --card:#ffffff;
-  --card2:#f2f5f9;
-  --text:#152033;
-  --muted:#617084;
-  --line:rgba(20,32,51,.12);
-  --shadow:0 15px 40px rgba(20,32,51,.10);
+:root{
+    --bg:#07111f;
+    --bg2:#0b1728;
+    --card:#101f33;
+    --card2:#13263e;
+    --text:#edf4ff;
+    --muted:#9fb1c8;
+    --gold:#e7b75d;
+    --gold2:#ffd98a;
+    --blue:#39a9ff;
+    --cyan:#52d9ff;
+    --line:rgba(255,255,255,.09);
+    --shadow:0 20px 50px rgba(0,0,0,.30);
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 html{
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:Inter,Segoe UI,Arial,sans-serif;
-  background:
-    radial-gradient(circle at 85% 5%,rgba(85,169,255,.13),transparent 28%),
-    radial-gradient(circle at 5% 25%,rgba(216,173,88,.08),transparent 25%),
-    var(--bg);
-  color:var(--text);
-  line-height:1.65;
-  transition:.3s;
+    font-family:Arial,Helvetica,sans-serif;
+    background:
+        radial-gradient(circle at 15% 10%,rgba(57,169,255,.10),transparent 28%),
+        radial-gradient(circle at 85% 20%,rgba(231,183,93,.08),transparent 25%),
+        var(--bg);
+    color:var(--text);
+    line-height:1.6;
+    overflow-x:hidden;
 }
 
+body.light{
+    --bg:#f4f7fb;
+    --bg2:#ffffff;
+    --card:#ffffff;
+    --card2:#f1f5fa;
+    --text:#102033;
+    --muted:#536579;
+    --line:rgba(16,32,51,.10);
+    --shadow:0 20px 45px rgba(20,40,70,.12);
+}
+
+/* ---------------- GLOBAL ---------------- */
+
 a{
-  text-decoration:none;
-  color:inherit;
+    color:inherit;
+    text-decoration:none;
 }
 
 .container{
-  width:min(1180px,92%);
-  margin:auto;
+    width:min(1180px,92%);
+    margin:auto;
 }
 
 section{
-  padding:90px 0;
+    padding:100px 0;
+    position:relative;
 }
 
 .section-head{
-  margin-bottom:42px;
+    margin-bottom:45px;
 }
 
-.section-head .eyebrow{
-  color:var(--gold);
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:2px;
-  text-transform:uppercase;
+.eyebrow{
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:12px;
 }
 
-.section-head h2{
-  font-size:40px;
-  line-height:1.15;
-  margin-top:8px;
+.section-title{
+    font-size:42px;
+    line-height:1.15;
+    margin-bottom:14px;
 }
 
-.section-head p{
-  color:var(--muted);
-  max-width:780px;
-  margin-top:12px;
+.section-text{
+    max-width:760px;
+    color:var(--muted);
 }
 
-/* NAVBAR */
+/* ---------------- HEADER ---------------- */
 
-.navbar{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(7,17,31,.88);
-  backdrop-filter:blur(18px);
-  border-bottom:1px solid var(--line);
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(7,17,31,.72);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid var(--line);
+    animation:navDrop .8s ease both;
 }
 
-body.light .navbar{
-  background:rgba(255,255,255,.9);
+body.light header{
+    background:rgba(255,255,255,.82);
 }
 
-.nav-inner{
-  min-height:72px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
+.nav{
+    min-height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
 }
 
 .logo{
-  font-size:21px;
-  font-weight:900;
+    font-size:21px;
+    font-weight:800;
+    letter-spacing:.3px;
 }
 
 .logo span{
-  color:var(--gold);
+    color:var(--gold);
 }
 
 .nav-links{
-  display:flex;
-  align-items:center;
-  gap:21px;
+    display:flex;
+    gap:25px;
+    align-items:center;
 }
 
 .nav-links a{
-  color:var(--muted);
-  font-size:13px;
-  font-weight:600;
+    color:var(--muted);
+    font-size:14px;
+    transition:.3s ease;
+    position:relative;
+}
+
+.nav-links a:after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-7px;
+    width:0;
+    height:2px;
+    background:var(--gold);
+    transition:.3s ease;
 }
 
 .nav-links a:hover{
-  color:var(--gold);
+    color:var(--text);
+}
+
+.nav-links a:hover:after{
+    width:100%;
 }
 
 .nav-actions{
-  display:flex;
-  gap:8px;
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
-.icon-btn{
-  width:38px;
-  height:38px;
-  border:1px solid var(--line);
-  border-radius:50%;
-  background:var(--card);
-  color:var(--text);
-  cursor:pointer;
+.theme-btn,
+.menu-btn{
+    border:1px solid var(--line);
+    background:var(--card);
+    color:var(--text);
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+.theme-btn:hover,
+.menu-btn:hover{
+    transform:translateY(-3px) rotate(8deg);
+    border-color:var(--gold);
 }
 
 .menu-btn{
-  display:none;
+    display:none;
 }
 
-/* BUTTONS */
+/* ---------------- BUTTONS ---------------- */
 
 .btn{
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  gap:8px;
-  padding:12px 18px;
-  border-radius:10px;
-  border:1px solid var(--line);
-  background:var(--card);
-  color:var(--text);
-  font-size:14px;
-  font-weight:800;
-  transition:.25s;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    padding:13px 21px;
+    border-radius:8px;
+    border:1px solid transparent;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease,
+        border-color .3s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.btn:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:70%;
+    height:100%;
+    background:linear-gradient(
+        100deg,
+        transparent,
+        rgba(255,255,255,.30),
+        transparent
+    );
+    transform:skewX(-20deg);
+    transition:.65s ease;
+}
+
+.btn:hover:before{
+    left:140%;
 }
 
 .btn:hover{
-  transform:translateY(-2px);
-  border-color:var(--gold);
+    transform:translateY(-3px);
 }
 
-.btn.primary{
-  background:linear-gradient(135deg,var(--gold),var(--gold2));
-  color:#101820;
-  border:none;
+.btn-primary{
+    background:linear-gradient(135deg,var(--gold),var(--gold2));
+    color:#101010;
+    box-shadow:0 10px 25px rgba(231,183,93,.20);
 }
 
-.btn.linkedin{
-  background:#0a66c2;
-  color:#fff;
-  border:none;
+.btn-primary:hover{
+    box-shadow:0 16px 35px rgba(231,183,93,.32);
 }
 
-.btn.whatsapp{
-  background:#159447;
-  color:#fff;
-  border:none;
+.btn-outline{
+    border-color:var(--line);
+    color:var(--text);
+    background:rgba(255,255,255,.025);
 }
 
-/* HERO */
+.btn-outline:hover{
+    border-color:var(--gold);
+    background:rgba(231,183,93,.07);
+}
+
+/* ---------------- HERO ---------------- */
 
 .hero{
-  min-height:calc(100vh - 72px);
-  display:flex;
-  align-items:center;
-  padding:80px 0;
+    min-height:100vh;
+    padding-top:150px;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+
+.hero:before{
+    content:"";
+    position:absolute;
+    width:650px;
+    height:650px;
+    border-radius:50%;
+    background:radial-gradient(
+        circle,
+        rgba(57,169,255,.13),
+        transparent 68%
+    );
+    top:-250px;
+    left:-250px;
+    animation:heroGlow 8s ease-in-out infinite alternate;
+}
+
+.hero:after{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    background:radial-gradient(
+        circle,
+        rgba(231,183,93,.09),
+        transparent 70%
+    );
+    right:-250px;
+    bottom:-250px;
+    animation:heroGlow 10s ease-in-out infinite alternate-reverse;
 }
 
 .hero-grid{
-  display:grid;
-  grid-template-columns:1.25fr .75fr;
-  gap:65px;
-  align-items:center;
+    display:grid;
+    grid-template-columns:1.3fr .7fr;
+    gap:70px;
+    align-items:center;
+    position:relative;
+    z-index:2;
 }
 
-.badge{
-  display:inline-flex;
-  padding:7px 13px;
-  border-radius:30px;
-  background:rgba(216,173,88,.08);
-  border:1px solid rgba(216,173,88,.30);
-  color:var(--gold2);
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  margin-bottom:20px;
+.hero-kicker{
+    display:inline-flex;
+    padding:7px 13px;
+    border-radius:50px;
+    background:rgba(231,183,93,.08);
+    border:1px solid rgba(231,183,93,.25);
+    color:var(--gold2);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:20px;
+    animation:fadeUp .9s ease .1s both;
 }
 
 .hero h1{
-  font-size:clamp(45px,6vw,76px);
-  line-height:1;
-  letter-spacing:-2.5px;
+    font-size:clamp(48px,7vw,82px);
+    line-height:.98;
+    letter-spacing:-3px;
+    margin-bottom:22px;
+    animation:fadeUp .9s ease .25s both;
 }
 
 .hero h1 span{
-  color:var(--gold);
+    color:var(--gold);
 }
 
-.hero h2{
-  color:var(--blue);
-  font-size:21px;
-  margin-top:22px;
+.hero-subtitle{
+    font-size:20px;
+    color:var(--cyan);
+    font-weight:700;
+    margin-bottom:20px;
+    animation:fadeUp .9s ease .4s both;
 }
 
-.hero-text{
-  color:var(--muted);
-  font-size:17px;
-  max-width:750px;
-  margin:20px 0 28px;
+.hero-description{
+    color:var(--muted);
+    max-width:720px;
+    font-size:17px;
+    margin-bottom:30px;
+    animation:fadeUp .9s ease .55s both;
 }
 
-.hero-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    animation:fadeUp .9s ease .7s both;
+}
+
+.profile-wrap{
+    display:flex;
+    justify-content:center;
+    animation:profileReveal 1.1s ease .45s both;
 }
 
 .profile-card{
-  padding:18px;
-  background:linear-gradient(145deg,var(--card),var(--card2));
-  border:1px solid var(--line);
-  border-radius:25px;
-  box-shadow:var(--shadow);
+    width:min(370px,100%);
+    padding:16px;
+    background:linear-gradient(
+        145deg,
+        rgba(255,255,255,.08),
+        rgba(255,255,255,.025)
+    );
+    border:1px solid var(--line);
+    border-radius:24px;
+    box-shadow:var(--shadow);
+    position:relative;
+    overflow:hidden;
 }
 
-.profile-card img{
-  width:100%;
-  aspect-ratio:1/1;
-  object-fit:cover;
-  object-position:center top;
-  border-radius:18px;
+.profile-card:before{
+    content:"";
+    position:absolute;
+    inset:-2px;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(231,183,93,.30),
+        transparent
+    );
+    animation:cardShine 5s linear infinite;
 }
 
-.profile-details{
-  padding:18px 5px 5px;
-  text-align:center;
+.profile-image{
+    width:100%;
+    aspect-ratio:4/5;
+    object-fit:cover;
+    border-radius:17px;
+    display:block;
+    position:relative;
+    z-index:2;
+    transition:.6s ease;
 }
 
-.profile-details h3{
-  font-size:21px;
+.profile-card:hover .profile-image{
+    transform:scale(1.025);
 }
 
-.profile-details p{
-  color:var(--muted);
-  font-size:13px;
-}
-
-/* EXECUTIVE SNAPSHOT */
-
-.snapshot{
-  margin-top:-10px;
-}
+/* ---------------- METRICS ---------------- */
 
 .metrics{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    position:relative;
+    z-index:2;
 }
 
 .metric{
-  background:linear-gradient(145deg,var(--card),var(--card2));
-  border:1px solid var(--line);
-  border-radius:17px;
-  padding:24px 15px;
-  text-align:center;
+    padding:25px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.025);
+    border-radius:14px;
+    transition:.35s ease;
+}
+
+.metric:hover{
+    transform:translateY(-7px);
+    border-color:rgba(231,183,93,.35);
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
 }
 
 .metric-number{
-  color:var(--gold);
-  font-size:28px;
-  font-weight:900;
+    font-size:32px;
+    font-weight:800;
+    color:var(--gold);
+    margin-bottom:5px;
 }
 
 .metric-label{
-  color:var(--muted);
-  font-size:12px;
-  margin-top:4px;
+    color:var(--muted);
+    font-size:13px;
 }
 
-/* CARDS */
+/* ---------------- CARDS ---------------- */
+
+.grid-2{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+}
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
 
 .card{
-  background:linear-gradient(145deg,var(--card),var(--card2));
-  border:1px solid var(--line);
-  border-radius:19px;
-  padding:28px;
-  box-shadow:var(--shadow);
+    background:linear-gradient(
+        145deg,
+        rgba(255,255,255,.045),
+        rgba(255,255,255,.018)
+    );
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 10px 35px rgba(0,0,0,.10);
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+body.light .card{
+    background:#fff;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(231,183,93,.32);
+    box-shadow:var(--shadow);
 }
 
 .card h3{
-  margin-bottom:10px;
+    margin-bottom:10px;
+    font-size:21px;
 }
 
 .card p{
-  color:var(--muted);
+    color:var(--muted);
 }
 
-/* VALUE PROPOSITION */
+/* ---------------- ABOUT ---------------- */
 
-.value-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
+.about-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:start;
 }
 
-.value-list{
-  display:grid;
-  gap:12px;
-  margin-top:20px;
+.about-list{
+    margin-top:25px;
+    display:grid;
+    gap:12px;
 }
 
-.value-item{
-  display:flex;
-  gap:13px;
-  padding:13px;
-  background:rgba(216,173,88,.05);
-  border-left:3px solid var(--gold);
-  border-radius:7px;
+.about-list div{
+    display:flex;
+    gap:12px;
+    color:var(--muted);
 }
 
-.value-icon{
-  color:var(--gold);
-  font-weight:900;
+.about-list strong{
+    color:var(--text);
 }
 
-.quote{
-  border-left:4px solid var(--gold);
-  padding:20px 22px;
-  margin-top:22px;
-  background:rgba(216,173,88,.05);
-  border-radius:8px;
-  color:var(--text);
-  font-size:18px;
+.check{
+    color:var(--gold);
+    font-weight:800;
 }
 
-/* FOOTPRINT */
+/* ---------------- FOOTPRINT ---------------- */
 
 .footprint{
-  position:relative;
-  min-height:530px;
-  overflow:hidden;
-  border:1px solid var(--line);
-  border-radius:24px;
-  background:
-    radial-gradient(circle at 50% 45%,rgba(85,169,255,.13),transparent 32%),
-    linear-gradient(145deg,var(--card),var(--card2));
+    background:linear-gradient(
+        180deg,
+        transparent,
+        rgba(57,169,255,.035),
+        transparent
+    );
 }
 
-.footprint-title{
-  position:absolute;
-  top:25px;
-  left:28px;
-  z-index:5;
+.map-box{
+    min-height:460px;
+    border:1px solid var(--line);
+    border-radius:24px;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(57,169,255,.07),
+            transparent 50%
+        ),
+        var(--card);
+    position:relative;
+    overflow:hidden;
 }
 
-.footprint-title h3{
-  font-size:24px;
+.map-outline{
+    position:absolute;
+    width:340px;
+    height:400px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%) rotate(10deg);
+    border:2px solid rgba(231,183,93,.20);
+    clip-path:polygon(
+        47% 0,
+        66% 12%,
+        72% 28%,
+        86% 42%,
+        75% 60%,
+        80% 75%,
+        61% 100%,
+        43% 87%,
+        31% 72%,
+        17% 57%,
+        27% 38%,
+        21% 22%
+    );
 }
 
-.footprint-title p{
-  color:var(--muted);
-  font-size:13px;
-}
-
-.india-shape{
-  position:absolute;
-  width:330px;
-  height:430px;
-  left:50%;
-  top:48%;
-  transform:translate(-50%,-50%) rotate(5deg);
-  background:rgba(85,169,255,.05);
-  border:1px dashed rgba(85,169,255,.35);
-  clip-path:polygon(
-    47% 0%,62% 5%,69% 14%,77% 18%,81% 28%,
-    90% 37%,86% 47%,95% 58%,86% 65%,82% 75%,
-    71% 82%,67% 93%,56% 100%,47% 91%,42% 78%,
-    31% 70%,24% 58%,16% 51%,21% 40%,13% 32%,
-    25% 24%,27% 12%,38% 10%
-  );
+.map-label{
+    position:absolute;
+    top:25px;
+    left:25px;
+    color:var(--muted);
+    font-size:13px;
 }
 
 .pin{
-  position:absolute;
-  z-index:8;
-  transform:translate(-50%,-50%);
+    position:absolute;
+    width:13px;
+    height:13px;
+    background:var(--gold);
+    border-radius:50%;
+    box-shadow:0 0 0 7px rgba(231,183,93,.10);
+    animation:pinPulse 2.2s infinite;
 }
 
-.pin-dot{
-  width:13px;
-  height:13px;
-  border-radius:50%;
-  background:var(--gold);
-  border:3px solid white;
-  box-shadow:0 0 0 7px rgba(216,173,88,.12);
+.pin span{
+    position:absolute;
+    left:20px;
+    top:-8px;
+    white-space:nowrap;
+    font-size:12px;
+    color:var(--text);
 }
 
-.pin-label{
-  position:absolute;
-  top:18px;
-  left:50%;
-  transform:translateX(-50%);
-  white-space:nowrap;
-  background:var(--bg);
-  border:1px solid var(--line);
-  padding:4px 7px;
-  border-radius:5px;
-  font-size:10px;
-  font-weight:800;
-}
+.pin.gujarat{left:25%;top:52%}
+.pin.maharashtra{left:38%;top:68%}
+.pin.mp{left:48%;top:45%}
+.pin.bihar{left:69%;top:30%}
+.pin.up{left:62%;top:38%}
+.pin.delhi{left:61%;top:27%}
+.pin.haryana{left:57%;top:22%}
+.pin.uk{left:67%;top:16%}
+.pin.jharkhand{left:72%;top:44%}
 
-.gujarat{left:38%;top:51%}
-.maharashtra{left:49%;top:67%}
-.madhya{left:53%;top:45%}
-.bihar{left:70%;top:38%}
-.up{left:64%;top:31%}
-.delhi{left:60%;top:26%}
-.haryana{left:56%;top:24%}
-.uttarakhand{left:65%;top:20%}
-.jharkhand{left:71%;top:50%}
-
-.region-list{
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:0;
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:7px;
-  padding:18px;
-  border-top:1px solid var(--line);
-  background:rgba(0,0,0,.13);
-}
-
-.region{
-  font-size:10px;
-  color:var(--muted);
-  border:1px solid var(--line);
-  border-radius:20px;
-  padding:5px 9px;
-}
-
-/* PROJECTS */
+/* ---------------- PROJECTS ---------------- */
 
 .filters{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  margin-bottom:25px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+    margin-bottom:30px;
 }
 
 .filter{
-  cursor:pointer;
-  padding:8px 13px;
-  border-radius:25px;
-  border:1px solid var(--line);
-  background:var(--card);
-  color:var(--muted);
-  font-weight:800;
+    border:1px solid var(--line);
+    background:transparent;
+    color:var(--muted);
+    padding:9px 15px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s ease;
 }
 
-.filter.active,
-.filter:hover{
-  background:var(--gold);
-  color:#101820;
-  border-color:var(--gold);
+.filter:hover,
+.filter.active{
+    color:#111;
+    background:var(--gold);
+    border-color:var(--gold);
 }
 
-.project-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
+.project-card{
+    position:relative;
+    overflow:hidden;
 }
 
-.project{
-  display:flex;
-  flex-direction:column;
+.project-card:after{
+    content:"";
+    position:absolute;
+    width:130px;
+    height:130px;
+    right:-70px;
+    top:-70px;
+    border-radius:50%;
+    background:rgba(231,183,93,.07);
+    transition:.4s ease;
+}
+
+.project-card:hover:after{
+    transform:scale(2.2);
 }
 
 .project-tag{
-  color:var(--gold);
-  text-transform:uppercase;
-  font-size:11px;
-  font-weight:900;
-  letter-spacing:1px;
-}
-
-.project h3{
-  font-size:20px;
-  margin-top:5px;
-}
-
-.project p{
-  font-size:13px;
-  color:var(--muted);
-  margin:10px 0 15px;
+    display:inline-block;
+    color:var(--gold);
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    font-weight:800;
+    margin-bottom:13px;
 }
 
 .project-meta{
-  display:flex;
-  flex-wrap:wrap;
-  gap:6px;
-  margin-top:auto;
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:18px;
 }
 
 .project-meta span{
-  padding:4px 7px;
-  border-radius:5px;
-  background:rgba(85,169,255,.08);
-  color:var(--blue);
-  border:1px solid rgba(85,169,255,.18);
-  font-size:10px;
+    padding:5px 9px;
+    border-radius:5px;
+    background:rgba(57,169,255,.07);
+    color:var(--muted);
+    font-size:11px;
 }
 
-/* CASE STUDY */
-
-.case-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:20px;
-}
-
-.case{
-  position:relative;
-  overflow:hidden;
-}
+/* ---------------- CASE STUDIES ---------------- */
 
 .case-number{
-  color:var(--gold);
-  font-size:13px;
-  font-weight:900;
-  letter-spacing:1px;
+    color:var(--gold);
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:2px;
+    margin-bottom:12px;
 }
 
-.case h3{
-  font-size:22px;
-  margin:6px 0 12px;
+.case-card h3{
+    font-size:24px;
 }
 
-.case-row{
-  margin-top:10px;
-}
-
-.case-row strong{
-  display:block;
-  font-size:12px;
-  color:var(--gold2);
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
-
-.case-row span{
-  color:var(--muted);
-  font-size:13px;
-}
-
-/* CAREER */
+/* ---------------- TIMELINE ---------------- */
 
 .timeline{
-  max-width:900px;
-  margin:auto;
-  position:relative;
+    position:relative;
+    max-width:900px;
 }
 
 .timeline:before{
-  content:"";
-  position:absolute;
-  left:20px;
-  top:0;
-  bottom:0;
-  width:2px;
-  background:var(--line);
+    content:"";
+    position:absolute;
+    left:13px;
+    top:0;
+    bottom:0;
+    width:1px;
+    background:linear-gradient(
+        var(--gold),
+        rgba(231,183,93,.05)
+    );
 }
 
 .timeline-item{
-  position:relative;
-  padding-left:65px;
-  margin-bottom:32px;
+    position:relative;
+    padding-left:55px;
+    padding-bottom:40px;
 }
 
 .timeline-dot{
-  position:absolute;
-  left:11px;
-  top:6px;
-  width:20px;
-  height:20px;
-  border-radius:50%;
-  background:var(--gold);
-  border:5px solid var(--bg);
+    position:absolute;
+    left:7px;
+    top:4px;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:var(--gold);
+    box-shadow:0 0 0 6px rgba(231,183,93,.08);
+    transition:.3s ease;
 }
 
-.timeline-year{
-  color:var(--gold);
-  font-size:12px;
-  font-weight:900;
+.timeline-item:hover .timeline-dot{
+    transform:scale(1.5);
+    box-shadow:0 0 0 10px rgba(231,183,93,.08);
+}
+
+.timeline-date{
+    color:var(--gold);
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:1px;
+    margin-bottom:7px;
 }
 
 .timeline-item h3{
-  font-size:21px;
+    margin-bottom:4px;
 }
 
 .timeline-item p{
-  color:var(--muted);
+    color:var(--muted);
 }
 
-/* EXPERTISE */
+/* ---------------- SKILLS ---------------- */
 
-.expertise{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:12px;
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:11px;
 }
 
 .skill{
-  padding:18px 12px;
-  border-radius:13px;
-  border:1px solid var(--line);
-  background:var(--card);
-  text-align:center;
-  font-weight:800;
-  font-size:13px;
+    padding:11px 15px;
+    border:1px solid var(--line);
+    border-radius:8px;
+    color:var(--muted);
+    background:rgba(255,255,255,.025);
+    transition:.3s ease;
 }
 
-/* ACHIEVEMENTS */
-
-.achievement-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
+.skill:hover{
+    color:var(--text);
+    border-color:var(--gold);
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(231,183,93,.08);
 }
 
-.achievement .number{
-  color:var(--gold);
-  font-size:28px;
-  font-weight:900;
+/* ---------------- ACHIEVEMENTS ---------------- */
+
+.achievement{
+    min-height:180px;
 }
 
-/* EDUCATION */
-
-.edu-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
+.achievement-icon{
+    font-size:28px;
+    margin-bottom:15px;
 }
 
-.edu-item{
-  padding:18px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:var(--card);
+/* ---------------- CTA ---------------- */
+
+.cta{
+    padding:55px;
+    border:1px solid rgba(231,183,93,.22);
+    border-radius:24px;
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(231,183,93,.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            120deg,
+            rgba(57,169,255,.06),
+            rgba(231,183,93,.04)
+        );
 }
 
-.edu-item h3{
-  font-size:17px;
+.cta h2{
+    font-size:38px;
+    margin-bottom:12px;
 }
 
-.edu-item p{
-  color:var(--muted);
-  font-size:13px;
-  margin-top:4px;
+.cta p{
+    color:var(--muted);
+    max-width:760px;
+    margin-bottom:25px;
 }
 
-/* CONTACT */
+/* ---------------- CONTACT ---------------- */
 
 .contact-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-}
-
-.contact-list{
-  display:grid;
-  gap:12px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
 }
 
 .contact-item{
-  display:flex;
-  align-items:center;
-  gap:13px;
-  padding:14px;
-  border:1px solid var(--line);
-  background:var(--card);
-  border-radius:12px;
+    padding:22px;
+    border:1px solid var(--line);
+    border-radius:13px;
+    background:rgba(255,255,255,.025);
+    transition:.3s ease;
 }
 
-.contact-icon{
-  width:40px;
-  height:40px;
-  display:grid;
-  place-items:center;
-  border-radius:10px;
-  background:rgba(216,173,88,.10);
-  color:var(--gold);
-  font-weight:900;
+.contact-item:hover{
+    transform:translateX(5px);
+    border-color:rgba(231,183,93,.30);
 }
 
-.contact-item small{
-  display:block;
-  color:var(--muted);
+.contact-label{
+    color:var(--muted);
+    font-size:12px;
+    margin-bottom:4px;
 }
 
-.contact-item strong{
-  font-size:13px;
-  word-break:break-word;
+.contact-value{
+    font-weight:700;
 }
 
-.cta{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin-top:20px;
-}
-
-/* FOOTER */
+/* ---------------- FOOTER ---------------- */
 
 footer{
-  border-top:1px solid var(--line);
-  padding:30px 0;
-  color:var(--muted);
-  text-align:center;
-  font-size:12px;
+    padding:35px 0;
+    border-top:1px solid var(--line);
+    color:var(--muted);
+    font-size:13px;
 }
 
-/* WHATSAPP */
+.footer-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.socials{
+    display:flex;
+    gap:10px;
+}
+
+.socials a{
+    width:36px;
+    height:36px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid var(--line);
+    border-radius:50%;
+    transition:.3s ease;
+}
+
+.socials a:hover{
+    transform:translateY(-4px);
+    border-color:var(--gold);
+    color:var(--gold);
+}
+
+/* ---------------- WHATSAPP ---------------- */
 
 .whatsapp-float{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  background:#159447;
-  color:white;
-  display:grid;
-  place-items:center;
-  font-size:25px;
-  z-index:2000;
-  box-shadow:0 12px 30px rgba(0,0,0,.3);
-}
-
-/* RESPONSIVE */
-
-@media(max-width:950px){
-
-  .nav-links{
-    display:none;
-    position:absolute;
-    top:72px;
-    left:0;
-    right:0;
-    padding:20px;
-    flex-direction:column;
-    align-items:flex-start;
-    background:var(--bg2);
-    border-bottom:1px solid var(--line);
-  }
-
-  .nav-links.open{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
     display:flex;
-  }
-
-  .menu-btn{
-    display:block;
-  }
-
-  .hero-grid,
-  .value-grid,
-  .contact-grid,
-  .edu-grid{
-    grid-template-columns:1fr;
-  }
-
-  .metrics{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .project-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .case-grid{
-    grid-template-columns:1fr;
-  }
-
-  .expertise{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .achievement-grid{
-    grid-template-columns:1fr;
-  }
+    align-items:center;
+    justify-content:center;
+    font-size:26px;
+    z-index:1100;
+    box-shadow:0 10px 30px rgba(37,211,102,.35);
+    animation:whatsappPulse 2.4s infinite;
+    transition:.3s ease;
 }
 
-@media(max-width:620px){
-
-  section{
-    padding:65px 0;
-  }
-
-  .section-head h2{
-    font-size:30px;
-  }
-
-  .hero{
-    padding:55px 0;
-  }
-
-  .hero h1{
-    font-size:45px;
-  }
-
-  .hero h2{
-    font-size:18px;
-  }
-
-  .hero-text{
-    font-size:15px;
-  }
-
-  .hero-actions .btn{
-    width:100%;
-  }
-
-  .metrics{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .metric-number{
-    font-size:22px;
-  }
-
-  .project-grid{
-    grid-template-columns:1fr;
-  }
-
-  .footprint{
-    min-height:570px;
-  }
-
-  .india-shape{
-    width:245px;
-    height:380px;
-  }
-
-  .pin-label{
-    font-size:8px;
-  }
-
-  .region{
-    font-size:9px;
-    padding:4px 7px;
-  }
-
-  .nav-actions .btn{
-    display:none;
-  }
+.whatsapp-float:hover{
+    transform:scale(1.12) rotate(5deg);
 }
+
+/* ---------------- REVEAL ANIMATION ---------------- */
+
+.reveal{
+    opacity:0;
+    transform:translateY(30px);
+    transition:
+        opacity .75s ease,
+        transform .75s ease;
+}
+
+.reveal.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ---------------- ANIMATIONS ---------------- */
+
+@keyframes navDrop{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes profileReveal{
+    from{
+        opacity:0;
+        transform:translateX(40px) scale(.95);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0) scale(1);
+    }
+}
+
+@keyframes heroGlow{
+    from{
+        transform:scale(.95) translate(0,0);
+        opacity:.6;
+    }
+    to{
+        transform:scale(1.12) translate(20px,-15px);
+        opacity:1;
+    }
+}
+
+@keyframes cardShine{
+    0%{
+        transform:translateX(-120%) rotate(20deg);
+    }
+    50%,100%{
+        transform:translateX(160%) rotate(20deg);
+    }
+}
+
+@keyframes pinPulse{
+    0%,100%{
+        box-shadow:0 0 0 5px rgba(231,183,93,.08);
+    }
+    50%{
+        box-shadow:0 0 0 11px rgba(231,183,93,.03);
+    }
+}
+
+@keyframes whatsappPulse{
+    0%,100%{
+        box-shadow:
+            0 10px 30px rgba(37,211,102,.30),
+            0 0 0 0 rgba(37,211,102,.35);
+    }
+    50%{
+        box-shadow:
+            0 10px 30px rgba(37,211,102,.35),
+            0 0 0 12px rgba(37,211,102,0);
+    }
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:900px){
+
+    .nav-links{
+        position:absolute;
+        top:76px;
+        left:4%;
+        right:4%;
+        display:none;
+        flex-direction:column;
+        align-items:flex-start;
+        padding:20px;
+        background:var(--card);
+        border:1px solid var(--line);
+        border-radius:14px;
+        box-shadow:var(--shadow);
+    }
+
+    .nav-links.open{
+        display:flex;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .hero{
+        padding-top:125px;
+    }
+
+    .profile-wrap{
+        order:-1;
+    }
+
+    .metrics{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .grid-2,
+    .grid-3,
+    .about-layout,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:75px 0;
+    }
+
+    .section-title{
+        font-size:34px;
+    }
+
+    .cta{
+        padding:35px 25px;
+    }
+
+    .cta h2{
+        font-size:30px;
+    }
+
+    .footer-row{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+}
+
+@media(max-width:550px){
+
+    .logo{
+        font-size:18px;
+    }
+
+    .hero h1{
+        font-size:48px;
+        letter-spacing:-2px;
+    }
+
+    .hero-subtitle{
+        font-size:17px;
+    }
+
+    .hero-description{
+        font-size:15px;
+    }
+
+    .metrics{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .metric{
+        padding:18px;
+    }
+
+    .metric-number{
+        font-size:25px;
+    }
+
+    .map-box{
+        min-height:400px;
+    }
+
+    .map-outline{
+        width:280px;
+        height:340px;
+    }
+
+    .pin span{
+        font-size:10px;
+    }
+
+    .whatsapp-float{
+        width:53px;
+        height:53px;
+        right:17px;
+        bottom:17px;
+    }
+}
+
+/* ---------------- ACCESSIBILITY ---------------- */
+
+@media(prefers-reduced-motion:reduce){
+
+    *,
+    *:before,
+    *:after{
+        animation:none !important;
+        transition:none !important;
+        scroll-behavior:auto !important;
+    }
+
+    .reveal{
+        opacity:1;
+        transform:none;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- ================= HEADER ================= -->
 
-<header class="navbar">
-
-<div class="container nav-inner">
+<header>
+<div class="container nav">
 
 <a href="#home" class="logo">
-Manoranjan <span>Singh.</span>
+Manoranjan <span>Singh</span>
 </a>
 
 <nav class="nav-links" id="navLinks">
+
+<a href="#home">Home</a>
 <a href="#about">About</a>
-<a href="#value">Leadership</a>
-<a href="#footprint">Footprint</a>
 <a href="#projects">Projects</a>
 <a href="#career">Career</a>
 <a href="#expertise">Expertise</a>
 <a href="#achievements">Achievements</a>
 <a href="#contact">Contact</a>
+
 </nav>
 
 <div class="nav-actions">
 
-<button class="icon-btn" onclick="toggleTheme()" title="Dark / Light Mode">
+<button class="theme-btn" id="themeBtn" aria-label="Change theme">
 ☼
 </button>
 
-<button class="icon-btn menu-btn" onclick="toggleMenu()" title="Menu">
+<button class="menu-btn" id="menuBtn" aria-label="Open menu">
 ☰
 </button>
 
 </div>
 
 </div>
-
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
-<div class="container hero-grid">
+<div class="container">
+
+<div class="hero-grid">
 
 <div>
 
-<div class="badge">
-AGM / Chief Project Manager • Power Transmission
+<div class="hero-kicker">
+AGM / CHIEF PROJECT MANAGER
 </div>
 
 <h1>
 Manoranjan <span>Singh</span>
 </h1>
 
-<h2>
+<div class="hero-subtitle">
 Power Transmission Project Leader | TBCB | EPC | 765 kV & ±800 kV HVDC
-</h2>
+</div>
 
-<p class="hero-text">
-Senior transmission professional with 28+ years of experience
-in project execution, construction management, planning,
-ROW coordination, commercial management, safety and quality
-across major power transmission projects.
+<p class="hero-description">
+
+Power transmission professional with 28+ years of experience in
+large-scale EPC and TBCB transmission projects, covering project
+execution, construction management, planning, ROW, commercial
+management, resource planning, safety and quality.
+
 </p>
 
-<div class="hero-actions">
+<div class="hero-buttons">
 
-<a class="btn primary" href="#projects">
-View Projects →
+<a href="#projects" class="btn btn-primary">
+Explore Projects →
 </a>
 
-<a class="btn"
-href="./Manoranjan_Singh_Resume.pdf"
-target="_blank"
-rel="noopener">
-Download CV
+<a href="./Manoranjan_Singh_Resume.pdf"
+class="btn btn-outline"
+target="_blank">
+Download Resume
 </a>
 
-<a class="btn linkedin"
-href="https://www.linkedin.com/in/manoranjan-singh-99737855"
-target="_blank"
-rel="noopener">
-in LinkedIn
-</a>
-
-<a class="btn whatsapp"
-href="https://wa.me/919456044444?text=Hello%20Manoranjan%20Sir%2C%20I%20visited%20your%20professional%20portfolio."
-target="_blank"
-rel="noopener">
+<a href="https://wa.me/919456044444?text=Hello%20Manoranjan%20Sir%2C%20I%20visited%20your%20professional%20portfolio."
+class="btn btn-outline"
+target="_blank">
 WhatsApp
 </a>
 
@@ -1006,24 +1251,15 @@ WhatsApp
 </div>
 
 
+<div class="profile-wrap">
+
 <div class="profile-card">
 
-<img src="./manoranjan-profile.jpg"
-alt="Manoranjan Singh">
-
-<div class="profile-details">
-
-<h3>
-AGM / Chief Project Manager
-</h3>
-
-<p>
-Montecarlo Limited
-</p>
-
-<p>
-NES Dharashiv Transmission Limited • Maharashtra
-</p>
+<img
+src="./manoranjan-profile.jpg"
+alt="Manoranjan Singh"
+class="profile-image"
+>
 
 </div>
 
@@ -1031,35 +1267,58 @@ NES Dharashiv Transmission Limited • Maharashtra
 
 </div>
 
-</section>
-
-
-<!-- EXECUTIVE SNAPSHOT -->
-
-<section class="snapshot">
-
-<div class="container">
 
 <div class="metrics">
 
-<div class="metric">
-<div class="metric-number">28+</div>
-<div class="metric-label">Years Experience</div>
+<div class="metric reveal">
+
+<div class="metric-number">
+28+
 </div>
 
-<div class="metric">
-<div class="metric-number">25+</div>
-<div class="metric-label">Lines Energized</div>
+<div class="metric-label">
+Years of Professional Experience
 </div>
 
-<div class="metric">
-<div class="metric-number">₹2,200 Cr+</div>
-<div class="metric-label">Project Portfolio</div>
 </div>
 
-<div class="metric">
-<div class="metric-number">765 / ±800 kV</div>
-<div class="metric-label">Highest Voltage Exposure</div>
+
+<div class="metric reveal">
+
+<div class="metric-number">
+25+
+</div>
+
+<div class="metric-label">
+Transmission Lines Energized
+</div>
+
+</div>
+
+
+<div class="metric reveal">
+
+<div class="metric-number">
+₹2,200 Cr+
+</div>
+
+<div class="metric-label">
+Project Portfolio Exposure
+</div>
+
+</div>
+
+
+<div class="metric reveal">
+
+<div class="metric-number">
+765 / ±800 kV
+</div>
+
+<div class="metric-label">
+Highest Voltage Exposure
+</div>
+
 </div>
 
 </div>
@@ -1069,79 +1328,35 @@ NES Dharashiv Transmission Limited • Maharashtra
 </section>
 
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 
 <section id="about">
 
 <div class="container">
 
-<div class="section-head">
+<div class="section-head reveal">
 
 <div class="eyebrow">
 Executive Profile
 </div>
 
-<h2>
-Experienced Leadership. Disciplined Execution.
+<h2 class="section-title">
+Leadership built around execution.
 </h2>
 
-<p>
-A field-oriented project leader combining technical execution,
-planning, people management, commercial coordination and
-stakeholder engagement.
+<p class="section-text">
+
+Experienced project leader focused on converting engineering plans
+into safe, controlled and measurable field execution.
+
 </p>
 
 </div>
 
 
-<div class="value-grid">
+<div class="about-layout">
 
-<div class="card">
-
-<h3>
-Professional Profile
-</h3>
-
-<p>
-Experienced power transmission professional with extensive
-exposure to large-scale EPC and TBCB projects. Strong focus
-on project delivery, construction planning, resource
-optimization, contractor management, ROW coordination
-and field execution.
-</p>
-
-<div class="value-list">
-
-<div class="value-item">
-<div class="value-icon">01</div>
-<div>
-<strong>High Voltage Transmission</strong><br>
-132 kV • 220 kV • 400 kV • 765 kV
-</div>
-</div>
-
-<div class="value-item">
-<div class="value-icon">02</div>
-<div>
-<strong>HVDC Exposure</strong><br>
-±800 kV HVDC environment
-</div>
-</div>
-
-<div class="value-item">
-<div class="value-icon">03</div>
-<div>
-<strong>TBCB & EPC</strong><br>
-Project delivery and execution
-</div>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="card">
+<div class="card reveal">
 
 <h3>
 Current Assignment
@@ -1160,66 +1375,50 @@ TBCB Transmission Project<br>
 Maharashtra
 </p>
 
-<div class="quote">
-“Project objectives are converted into disciplined
-field execution through planning, people, resources,
-safety and stakeholder coordination.”
 </div>
 
-</div>
 
-</div>
+<div class="card reveal">
 
-</div>
-
-</section>
-
-
-<!-- LEADERSHIP VALUE -->
-
-<section id="value">
-
-<div class="container">
-
-<div class="section-head">
-
-<div class="eyebrow">
+<h3>
 Leadership Value
+</h3>
+
+<div class="about-list">
+
+<div>
+<span class="check">✓</span>
+<span><strong>Project Execution</strong> – End-to-end field leadership</span>
 </div>
 
-<h2>
-What I Bring to a Project
-</h2>
+<div>
+<span class="check">✓</span>
+<span><strong>Construction</strong> – Transmission line execution</span>
+</div>
 
-<p>
-A combination of field execution capability and management
-discipline developed through long-term transmission project experience.
-</p>
+<div>
+<span class="check">✓</span>
+<span><strong>Planning & Controls</strong> – Progress and resource control</span>
+</div>
+
+<div>
+<span class="check">✓</span>
+<span><strong>ROW</strong> – Landowner and stakeholder coordination</span>
+</div>
+
+<div>
+<span class="check">✓</span>
+<span><strong>Commercial</strong> – Vendor and contract coordination</span>
+</div>
+
+<div>
+<span class="check">✓</span>
+<span><strong>Safety & Quality</strong> – Field compliance and performance</span>
+</div>
 
 </div>
 
-
-<div class="expertise">
-
-<div class="skill">Project Leadership</div>
-<div class="skill">Construction Execution</div>
-<div class="skill">Project Planning</div>
-<div class="skill">Project Controls</div>
-
-<div class="skill">ROW Management</div>
-<div class="skill">Stakeholder Management</div>
-<div class="skill">Contract Management</div>
-<div class="skill">Vendor Management</div>
-
-<div class="skill">Resource Optimization</div>
-<div class="skill">Cost Control</div>
-<div class="skill">Safety Management</div>
-<div class="skill">Quality Management</div>
-
-<div class="skill">TBCB Projects</div>
-<div class="skill">Transmission EPC</div>
-<div class="skill">High Voltage Projects</div>
-<div class="skill">Team Leadership</div>
+</div>
 
 </div>
 
@@ -1228,106 +1427,74 @@ discipline developed through long-term transmission project experience.
 </section>
 
 
-<!-- INDIA FOOTPRINT -->
+<!-- ================= FOOTPRINT ================= -->
 
-<section id="footprint">
+<section class="footprint">
 
 <div class="container">
 
-<div class="section-head">
+<div class="section-head reveal">
 
 <div class="eyebrow">
 India Work Footprint
 </div>
 
-<h2>
-Project Experience Across Multiple Regions
+<h2 class="section-title">
+Transmission experience across India.
 </h2>
 
-<p>
-Professional transmission project exposure across Gujarat,
-Maharashtra, Madhya Pradesh, Bihar, Uttar Pradesh, Delhi,
-Haryana, Uttarakhand and Jharkhand.
+<p class="section-text">
+
+Professional exposure across multiple states and transmission
+project environments.
+
 </p>
 
 </div>
 
 
-<div class="footprint">
+<div class="map-box reveal">
 
-<div class="footprint-title">
-
-<h3>
-India Project Footprint
-</h3>
-
-<p>
-Transmission project execution & leadership exposure
-</p>
-
+<div class="map-label">
+Illustrative professional work footprint
 </div>
 
-<div class="india-shape"></div>
-
+<div class="map-outline"></div>
 
 <div class="pin gujarat">
-<div class="pin-dot"></div>
-<div class="pin-label">Gujarat</div>
+<span>Gujarat</span>
 </div>
 
 <div class="pin maharashtra">
-<div class="pin-dot"></div>
-<div class="pin-label">Maharashtra</div>
+<span>Maharashtra</span>
 </div>
 
-<div class="pin madhya">
-<div class="pin-dot"></div>
-<div class="pin-label">Madhya Pradesh</div>
+<div class="pin mp">
+<span>Madhya Pradesh</span>
 </div>
 
 <div class="pin bihar">
-<div class="pin-dot"></div>
-<div class="pin-label">Bihar</div>
+<span>Bihar</span>
 </div>
 
 <div class="pin up">
-<div class="pin-dot"></div>
-<div class="pin-label">Uttar Pradesh</div>
+<span>Uttar Pradesh</span>
 </div>
 
 <div class="pin delhi">
-<div class="pin-dot"></div>
-<div class="pin-label">Delhi</div>
+<span>Delhi</span>
 </div>
 
 <div class="pin haryana">
-<div class="pin-dot"></div>
-<div class="pin-label">Haryana</div>
+<span>Haryana</span>
 </div>
 
-<div class="pin uttarakhand">
-<div class="pin-dot"></div>
-<div class="pin-label">Uttarakhand</div>
+<div class="pin uk">
+<span>Uttarakhand</span>
 </div>
 
 <div class="pin jharkhand">
-<div class="pin-dot"></div>
-<div class="pin-label">Jharkhand</div>
-</div>
-
-
-<div class="region-list">
-
-<div class="region">Gujarat</div>
-<div class="region">Maharashtra</div>
-<div class="region">Madhya Pradesh</div>
-<div class="region">Bihar</div>
-<div class="region">Uttar Pradesh</div>
-<div class="region">Delhi</div>
-<div class="region">Haryana</div>
-<div class="region">Uttarakhand</div>
-<div class="region">Jharkhand</div>
-
+<span>Jharkhand</span>
 </div>
 
 </div>
@@ -1337,25 +1504,27 @@ Transmission project execution & leadership exposure
 </section>
 
 
-<!-- PROJECT PORTFOLIO -->
+<!-- ================= PROJECTS ================= -->
 
 <section id="projects">
 
 <div class="container">
 
-<div class="section-head">
+<div class="section-head reveal">
 
 <div class="eyebrow">
-Selected Projects
+Project Portfolio
 </div>
 
-<h2>
-Transmission Project Portfolio
+<h2 class="section-title">
+Selected transmission project experience.
 </h2>
 
-<p>
-Selected assignments demonstrating experience across
-high-voltage transmission, TBCB and EPC environments.
+<p class="section-text">
+
+Experience spanning TBCB, EPC and high-voltage transmission
+projects across multiple voltage levels.
+
 </p>
 
 </div>
@@ -1367,7 +1536,7 @@ high-voltage transmission, TBCB and EPC environments.
 All
 </button>
 
-<button class="filter" data-filter="tbc">
+<button class="filter" data-filter="tbcb">
 TBCB
 </button>
 
@@ -1394,13 +1563,14 @@ HVDC
 </div>
 
 
-<div class="project-grid">
+<div class="grid-2">
 
 
-<article class="card project" data-type="tbc">
+<div class="card project-card project reveal"
+data-category="tbcb">
 
 <div class="project-tag">
-Current • TBCB
+Current Assignment · TBCB
 </div>
 
 <h3>
@@ -1408,49 +1578,52 @@ NES Dharashiv Transmission Limited
 </h3>
 
 <p>
-TBCB transmission project in Maharashtra involving
-project execution, planning, ROW, stakeholder coordination
-and field management.
+Maharashtra TBCB transmission project under
+Montecarlo Limited.
 </p>
 
 <div class="project-meta">
+<span>Transmission</span>
 <span>TBCB</span>
 <span>Maharashtra</span>
-<span>EPC</span>
+<span>Project Leadership</span>
 </div>
 
-</article>
+</div>
 
 
-<article class="card project" data-type="765">
+<div class="card project-card project reveal"
+data-category="765">
 
 <div class="project-tag">
 Jyoti Structures
 </div>
 
 <h3>
-765 kV D/C Khavda–Lakadia
+765 kV D/C Khavda – Lakadia
 </h3>
 
 <p>
-Major high-voltage transmission assignment involving
-tower erection, stringing, manpower, T&P and
-site execution management.
+High-voltage transmission line project involving
+large-scale construction, erection, stringing,
+resources and field execution management.
 </p>
 
 <div class="project-meta">
 <span>765 kV</span>
 <span>D/C</span>
+<span>Transmission Line</span>
 <span>Gujarat</span>
 </div>
 
-</article>
+</div>
 
 
-<article class="card project" data-type="220">
+<div class="card project-card project reveal"
+data-category="220">
 
 <div class="project-tag">
-MPPTCL
+MP Transmission
 </div>
 
 <h3>
@@ -1459,42 +1632,47 @@ MP Transmission Projects – Package 2
 
 <p>
 Transmission project exposure across Gwalior,
-Begumganj, Chhindwara and Jabalpur regions.
+Begumganj, Chhindwara and Jabalpur clusters.
 </p>
 
 <div class="project-meta">
-<span>220 kV</span>
-<span>Madhya Pradesh</span>
+<span>MP</span>
 <span>EPC</span>
+<span>Construction</span>
+<span>Planning</span>
 </div>
 
-</article>
+</div>
 
 
-<article class="card project" data-type="132">
+<div class="card project-card project reveal"
+data-category="132">
 
 <div class="project-tag">
-Transmission
+Transmission Experience
 </div>
 
 <h3>
-132 kV Transmission Experience
+132 kV Transmission Projects
 </h3>
 
 <p>
-Experience covering foundation, tower erection,
-stringing, ROW coordination and commissioning activities.
+Experience in transmission line execution,
+construction coordination, ROW and field
+management at 132 kV level.
 </p>
 
 <div class="project-meta">
 <span>132 kV</span>
 <span>Transmission</span>
+<span>ROW</span>
 </div>
 
-</article>
+</div>
 
 
-<article class="card project" data-type="400">
+<div class="card project-card project reveal"
+data-category="400">
 
 <div class="project-tag">
 High Voltage
@@ -1505,23 +1683,24 @@ High Voltage
 </h3>
 
 <p>
-High-voltage transmission experience covering
-construction planning, erection, stringing,
-quality, safety and project coordination.
+High-voltage transmission project experience
+covering construction and execution management.
 </p>
 
 <div class="project-meta">
 <span>400 kV</span>
-<span>Transmission</span>
+<span>EPC</span>
+<span>Execution</span>
 </div>
 
-</article>
+</div>
 
 
-<article class="card project" data-type="hvdc">
+<div class="card project-card project reveal"
+data-category="hvdc">
 
 <div class="project-tag">
-HVDC
+Specialised Exposure
 </div>
 
 <h3>
@@ -1529,20 +1708,21 @@ HVDC
 </h3>
 
 <p>
-Professional exposure to very-high-voltage transmission
-systems and associated project execution environments.
+Professional exposure to India's high-voltage
+AC and HVDC transmission environment.
 </p>
 
 <div class="project-meta">
 <span>765 kV</span>
-<span>±800 kV</span>
-<span>HVDC</span>
+<span>±800 kV HVDC</span>
+<span>High Voltage</span>
 </div>
 
-</article>
+</div>
 
 
-<article class="card project" data-type="400">
+<div class="card project-card project reveal"
+data-category="400">
 
 <div class="project-tag">
 DFCC
@@ -1553,21 +1733,21 @@ DFCC Transmission Line Package
 </h3>
 
 <p>
-Transmission execution experience associated with
-DFCC infrastructure, including safety, quality and
-field project coordination.
+Transmission line execution with strong focus on
+safety, quality and construction management.
 </p>
 
 <div class="project-meta">
-<span>Transmission</span>
 <span>DFCC</span>
 <span>Safety</span>
+<span>Quality</span>
 </div>
 
-</article>
+</div>
 
 
-<article class="card project" data-type="220">
+<div class="card project-card project reveal"
+data-category="220">
 
 <div class="project-tag">
 Bihar
@@ -1578,18 +1758,18 @@ Bihar Transmission Projects
 </h3>
 
 <p>
-Cumulative professional experience across major
-transmission assignments with portfolio exposure
-exceeding ₹2,200 crore.
+Transmission project exposure involving field
+execution, coordination and project management.
 </p>
 
 <div class="project-meta">
 <span>Bihar</span>
 <span>Transmission</span>
-<span>EPC</span>
+<span>Execution</span>
 </div>
 
-</article>
+</div>
+
 
 </div>
 
@@ -1598,133 +1778,101 @@ exceeding ₹2,200 crore.
 </section>
 
 
-<!-- PROJECT CASE STUDIES -->
+<!-- ================= CASE STUDIES ================= -->
 
 <section>
 
 <div class="container">
 
-<div class="section-head">
+<div class="section-head reveal">
 
 <div class="eyebrow">
 Project Leadership
 </div>
 
-<h2>
-Selected Project Case Studies
+<h2 class="section-title">
+Execution challenges. Structured solutions.
 </h2>
 
+</div>
+
+
+<div class="grid-2">
+
+<div class="card case-card reveal">
+
+<div class="case-number">
+01 / KHAVDA–LAKADIA
+</div>
+
+<h3>
+Large-scale 765 kV execution
+</h3>
+
 <p>
-A management-oriented view of project responsibilities
-without disclosing confidential contractual information.
+Management of high-voltage transmission line
+execution involving erection, stringing,
+manpower, T&P, logistics, material coordination,
+safety and productivity control.
 </p>
 
 </div>
 
 
-<div class="case-grid">
+<div class="card case-card reveal">
 
-
-<div class="card case">
-
-<div class="case-number">CASE STUDY 01</div>
+<div class="case-number">
+02 / NES DHARASHIV
+</div>
 
 <h3>
-765 kV D/C Khavda–Lakadia
+TBCB project leadership
 </h3>
 
-<div class="case-row">
-<strong>Project Environment</strong>
-<span>Large-scale high-voltage transmission line</span>
-</div>
-
-<div class="case-row">
-<strong>Leadership Focus</strong>
-<span>Construction, tower erection, stringing, manpower and T&P</span>
-</div>
-
-<div class="case-row">
-<strong>Execution Focus</strong>
-<span>Productivity, safety, material availability and field coordination</span>
-</div>
+<p>
+Leadership of transmission project activities
+including execution planning, ROW coordination,
+commercial interfaces, stakeholder management
+and project controls.
+</p>
 
 </div>
 
 
-<div class="card case">
+<div class="card case-card reveal">
 
-<div class="case-number">CASE STUDY 02</div>
+<div class="case-number">
+03 / MP PROJECTS
+</div>
 
 <h3>
-NES Dharashiv Transmission Limited
+Multi-location coordination
 </h3>
 
-<div class="case-row">
-<strong>Project Environment</strong>
-<span>TBCB transmission project in Maharashtra</span>
-</div>
-
-<div class="case-row">
-<strong>Leadership Focus</strong>
-<span>Project execution, planning, ROW and stakeholder coordination</span>
-</div>
-
-<div class="case-row">
-<strong>Execution Focus</strong>
-<span>Resource planning, contractor coordination and project delivery</span>
-</div>
+<p>
+Experience managing execution environments
+across multiple geographical clusters with
+focus on resources, productivity and progress.
+</p>
 
 </div>
 
 
-<div class="card case">
+<div class="card case-card reveal">
 
-<div class="case-number">CASE STUDY 03</div>
+<div class="case-number">
+04 / HIGH VOLTAGE
+</div>
 
 <h3>
-MP Transmission Projects
+765 kV & HVDC exposure
 </h3>
 
-<div class="case-row">
-<strong>Project Environment</strong>
-<span>Multi-location transmission project portfolio</span>
-</div>
-
-<div class="case-row">
-<strong>Leadership Focus</strong>
-<span>Site execution, manpower and construction planning</span>
-</div>
-
-<div class="case-row">
-<strong>Execution Focus</strong>
-<span>Coordination across multiple project locations</span>
-</div>
-
-</div>
-
-
-<div class="card case">
-
-<div class="case-number">CASE STUDY 04</div>
-
-<h3>
-High Voltage / HVDC Exposure
-</h3>
-
-<div class="case-row">
-<strong>Project Environment</strong>
-<span>765 kV and ±800 kV HVDC project environments</span>
-</div>
-
-<div class="case-row">
-<strong>Leadership Focus</strong>
-<span>High-voltage transmission execution exposure</span>
-</div>
-
-<div class="case-row">
-<strong>Execution Focus</strong>
-<span>Safety, quality, planning and field management</span>
-</div>
+<p>
+Experience across advanced high-voltage
+transmission environments, strengthening
+technical and execution leadership capability.
+</p>
 
 </div>
 
@@ -1735,20 +1883,20 @@ High Voltage / HVDC Exposure
 </section>
 
 
-<!-- CAREER -->
+<!-- ================= CAREER ================= -->
 
 <section id="career">
 
 <div class="container">
 
-<div class="section-head">
+<div class="section-head reveal">
 
 <div class="eyebrow">
 Career Journey
 </div>
 
-<h2>
-Professional Experience
+<h2 class="section-title">
+Leadership through the years.
 </h2>
 
 </div>
@@ -1756,82 +1904,82 @@ Professional Experience
 
 <div class="timeline">
 
-
-<div class="timeline-item">
+<div class="timeline-item reveal">
 
 <div class="timeline-dot"></div>
 
-<div class="timeline-year">
-June 2026 – Present
+<div class="timeline-date">
+JUNE 2026 – PRESENT
 </div>
 
 <h3>
-AGM / Chief Project Manager — Montecarlo Limited
+Montecarlo Limited
 </h3>
 
 <p>
-Leading TBCB transmission project execution for
-NES Dharashiv Transmission Limited, Maharashtra.
+AGM / Chief Project Manager – NES Dharashiv
+Transmission Limited, TBCB Project, Maharashtra.
 </p>
 
 </div>
 
 
-<div class="timeline-item">
+<div class="timeline-item reveal">
 
 <div class="timeline-dot"></div>
 
-<div class="timeline-year">
-April 2025 – May 2026
+<div class="timeline-date">
+APRIL 2025 – MAY 2026
 </div>
 
 <h3>
-AGM – Projects — Jyoti Structures Limited
+Jyoti Structures Limited
 </h3>
 
 <p>
-Project leadership for the 765 kV D/C Khavda–Lakadia
-transmission line assignment.
+AGM – Projects, with responsibility for major
+high-voltage transmission project execution.
 </p>
 
 </div>
 
 
-<div class="timeline-item">
+<div class="timeline-item reveal">
 
 <div class="timeline-dot"></div>
 
-<div class="timeline-year">
-December 2022 – March 2025
+<div class="timeline-date">
+DECEMBER 2022 – MARCH 2025
 </div>
 
 <h3>
-Senior Manager – Projects — Jyoti Structures Limited
+Senior Manager – Projects
 </h3>
 
 <p>
-Transmission project execution, construction,
-planning, T&P, manpower and site coordination.
+Project execution, construction management,
+planning, resources and field coordination.
 </p>
 
 </div>
 
 
-<div class="timeline-item">
+<div class="timeline-item reveal">
 
 <div class="timeline-dot"></div>
 
-<div class="timeline-year">
-Earlier Career
+<div class="timeline-date">
+EARLIER CAREER
 </div>
 
 <h3>
-Transmission Project Leadership Roles
+Transmission Project Leadership
 </h3>
 
 <p>
-Progressive experience across major transmission,
-EPC and infrastructure organizations.
+Progressive experience across transmission line
+construction, EPC execution, planning, ROW,
+commercial coordination and project management.
 </p>
 
 </div>
@@ -1843,46 +1991,56 @@ EPC and infrastructure organizations.
 </section>
 
 
-<!-- TECHNICAL EXPERTISE -->
+<!-- ================= EXPERTISE ================= -->
 
 <section id="expertise">
 
 <div class="container">
 
-<div class="section-head">
+<div class="section-head reveal">
 
 <div class="eyebrow">
 Technical Expertise
 </div>
 
-<h2>
-Transmission & Project Management Capabilities
+<h2 class="section-title">
+Core capabilities.
 </h2>
+
+<p class="section-text">
+
+A combination of technical transmission knowledge,
+construction leadership and commercial execution.
+
+</p>
 
 </div>
 
 
-<div class="expertise">
+<div class="skills">
 
-<div class="skill">132 kV Transmission</div>
-<div class="skill">220 kV Transmission</div>
-<div class="skill">400 kV Transmission</div>
-<div class="skill">765 kV Transmission</div>
-
-<div class="skill">±800 kV HVDC</div>
-<div class="skill">Transmission EPC</div>
-<div class="skill">TBCB Projects</div>
-<div class="skill">Construction Management</div>
-
-<div class="skill">Project Planning</div>
-<div class="skill">Project Controls</div>
-<div class="skill">ROW Management</div>
-<div class="skill">Contract Management</div>
-
-<div class="skill">Vendor Management</div>
-<div class="skill">Resource Planning</div>
-<div class="skill">Cost Control</div>
-<div class="skill">Safety & Quality</div>
+<div class="skill reveal">132 kV Transmission</div>
+<div class="skill reveal">220 kV Transmission</div>
+<div class="skill reveal">400 kV Transmission</div>
+<div class="skill reveal">765 kV Transmission</div>
+<div class="skill reveal">±800 kV HVDC Exposure</div>
+<div class="skill reveal">TBCB Projects</div>
+<div class="skill reveal">EPC Execution</div>
+<div class="skill reveal">Construction Management</div>
+<div class="skill reveal">Project Planning</div>
+<div class="skill reveal">Project Controls</div>
+<div class="skill reveal">ROW Management</div>
+<div class="skill reveal">Landowner Coordination</div>
+<div class="skill reveal">Vendor Management</div>
+<div class="skill reveal">Contract Coordination</div>
+<div class="skill reveal">Resource Planning</div>
+<div class="skill reveal">Cost Control</div>
+<div class="skill reveal">Safety Management</div>
+<div class="skill reveal">Quality Management</div>
+<div class="skill reveal">Tower Erection</div>
+<div class="skill reveal">Stringing</div>
+<div class="skill reveal">Foundation Execution</div>
+<div class="skill reveal">Stakeholder Management</div>
 
 </div>
 
@@ -1891,104 +2049,103 @@ Transmission & Project Management Capabilities
 </section>
 
 
-<!-- ACHIEVEMENTS -->
+<!-- ================= ACHIEVEMENTS ================= -->
 
 <section id="achievements">
 
 <div class="container">
 
-<div class="section-head">
+<div class="section-head reveal">
 
 <div class="eyebrow">
-Recognition & Achievements
+Professional Highlights
 </div>
 
-<h2>
-Professional Highlights
+<h2 class="section-title">
+Selected achievements.
 </h2>
 
 </div>
 
 
-<div class="achievement-grid">
+<div class="grid-3">
 
+<div class="card achievement reveal">
 
-<div class="card achievement">
-
-<div class="number">
-28+
+<div class="achievement-icon">
+🏆
 </div>
 
 <h3>
-Years of Experience
+28+ Years
 </h3>
 
 <p>
-Long-term experience in power transmission
-project execution and leadership.
+Long-standing professional experience in
+power transmission project execution.
 </p>
 
 </div>
 
 
-<div class="card achievement">
+<div class="card achievement reveal">
 
-<div class="number">
-25+
+<div class="achievement-icon">
+⚡
 </div>
 
 <h3>
-Lines Energized
+25+ Lines Energized
 </h3>
 
 <p>
-Extensive transmission project execution
-and commissioning experience.
+Extensive transmission line execution and
+energization experience.
 </p>
 
 </div>
 
 
-<div class="card achievement">
+<div class="card achievement reveal">
 
-<div class="number">
-₹2,200 Cr+
+<div class="achievement-icon">
+📊
 </div>
 
 <h3>
-Project Portfolio
+₹2,200 Cr+ Portfolio
 </h3>
 
 <p>
-Experience across major transmission
-project portfolios exceeding ₹2,200 crore.
+Professional exposure to large-scale
+transmission project portfolios.
 </p>
 
 </div>
 
 
-<div class="card achievement">
+<div class="card achievement reveal">
 
-<div class="number">
-765 / ±800 kV
+<div class="achievement-icon">
+🔌
 </div>
 
 <h3>
-High Voltage Exposure
+765 kV / ±800 kV
 </h3>
 
 <p>
-Exposure to very-high-voltage transmission
-and HVDC project environments.
+High-voltage AC and HVDC transmission
+project exposure.
 </p>
 
 </div>
 
 
-<div class="card achievement">
+<div class="card achievement reveal">
 
-<div class="number">
-Power Grid
+<div class="achievement-icon">
+🛡️
 </div>
 
 <h3>
@@ -1996,26 +2153,26 @@ Safety & Quality Recognition
 </h3>
 
 <p>
-Recognition associated with safety and quality
-performance on DFCC project work.
+Recognition from Power Grid for safety and
+quality performance on DFCC project.
 </p>
 
 </div>
 
 
-<div class="card achievement">
+<div class="card achievement reveal">
 
-<div class="number">
-9 Regions
+<div class="achievement-icon">
+🇮🇳
 </div>
 
 <h3>
-India Work Footprint
+9-State Footprint
 </h3>
 
 <p>
 Professional project exposure across multiple
-Indian states and Delhi.
+regions of India.
 </p>
 
 </div>
@@ -2027,73 +2184,64 @@ Indian states and Delhi.
 </section>
 
 
-<!-- EDUCATION / PROFESSIONAL DEVELOPMENT -->
+<!-- ================= EDUCATION ================= -->
 
 <section>
 
 <div class="container">
 
-<div class="section-head">
+<div class="section-head reveal">
 
 <div class="eyebrow">
 Education & Development
 </div>
 
-<h2>
-Professional Foundation
+<h2 class="section-title">
+Continuous professional development.
 </h2>
 
-<p>
-Academic and professional development supporting
-long-term transmission project leadership.
+<p class="section-text">
+
+Detailed academic qualifications, certifications and
+professional development information are available
+in the downloadable resume.
+
 </p>
 
 </div>
 
 
-<div class="edu-grid">
-
-<div class="card">
+<div class="card reveal">
 
 <h3>
-Education
+Professional Development Focus
 </h3>
 
-<p>
-Academic qualifications and professional foundation
-as detailed in the executive resume.
-</p>
+<div class="skills" style="margin-top:20px;">
 
-<br>
-
-<a class="btn"
-href="./Manoranjan_Singh_Resume.pdf"
-target="_blank"
-rel="noopener">
-View Detailed Resume
-</a>
-
+<div class="skill">
+Project Management
 </div>
 
+<div class="skill">
+Construction Leadership
+</div>
 
-<div class="card">
+<div class="skill">
+Safety & Quality
+</div>
 
-<h3>
-Professional Development
-</h3>
+<div class="skill">
+Planning & Controls
+</div>
 
-<p>
-Continuous exposure to project planning, construction,
-safety, quality, contract coordination and transmission
-project execution environments.
-</p>
+<div class="skill">
+Commercial Management
+</div>
 
-<br>
-
-<p>
-Relevant detailed training and certifications should be
-referred to in the latest professional resume.
-</p>
+<div class="skill">
+Transmission Technology
+</div>
 
 </div>
 
@@ -2104,49 +2252,41 @@ referred to in the latest professional resume.
 </section>
 
 
-<!-- EXECUTIVE CTA -->
+<!-- ================= CTA ================= -->
 
 <section>
 
 <div class="container">
 
-<div class="card" style="text-align:center;padding:50px 25px;">
+<div class="cta reveal">
 
 <div class="eyebrow">
-Professional Connect
+Professional Engagement
 </div>
 
-<h2 style="font-size:36px;margin:10px 0;">
-Let's Discuss a Project or Leadership Opportunity
+<h2>
+Let's connect for transmission projects.
 </h2>
 
-<p style="max-width:720px;margin:auto;color:var(--muted);">
-For senior project leadership, transmission EPC,
-TBCB projects, construction management or professional
-collaboration.
+<p>
+Open to professional discussions, project leadership
+opportunities, transmission EPC assignments,
+TBCB initiatives and strategic project execution
+roles.
 </p>
 
-<div class="cta" style="justify-content:center;">
+<div class="hero-buttons">
 
-<a class="btn primary"
-href="./Manoranjan_Singh_Resume.pdf"
-target="_blank"
-rel="noopener">
-Download Executive CV
+<a href="https://www.linkedin.com/in/manoranjan-singh-99737855"
+class="btn btn-primary"
+target="_blank">
+LinkedIn Profile →
 </a>
 
-<a class="btn linkedin"
-href="https://www.linkedin.com/in/manoranjan-singh-99737855"
-target="_blank"
-rel="noopener">
-Connect on LinkedIn
-</a>
-
-<a class="btn whatsapp"
-href="https://wa.me/919456044444?text=Hello%20Manoranjan%20Sir%2C%20I%20visited%20your%20professional%20portfolio."
-target="_blank"
-rel="noopener">
-WhatsApp
+<a href="https://wa.me/919456044444?text=Hello%20Manoranjan%20Sir%2C%20I%20visited%20your%20professional%20portfolio."
+class="btn btn-outline"
+target="_blank">
+Connect on WhatsApp
 </a>
 
 </div>
@@ -2158,149 +2298,83 @@ WhatsApp
 </section>
 
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
 
 <section id="contact">
 
 <div class="container">
 
-<div class="section-head">
+<div class="section-head reveal">
 
 <div class="eyebrow">
 Contact
 </div>
 
-<h2>
-Professional Contact
+<h2 class="section-title">
+Let's connect.
 </h2>
-
-<p>
-For professional discussions, project opportunities
-and senior transmission project leadership roles.
-</p>
 
 </div>
 
 
 <div class="contact-grid">
 
+<a class="contact-item reveal"
+href="mailto:manoranjansingh.agra@gmail.com">
 
-<div class="card">
+<div class="contact-label">
+Email
+</div>
 
-<div class="contact-list">
+<div class="contact-value">
+manoranjansingh.agra@gmail.com
+</div>
+
+</a>
 
 
-<a class="contact-item"
+<a class="contact-item reveal"
 href="tel:+919456044444">
 
-<div class="contact-icon">
-☎
+<div class="contact-label">
+Phone
 </div>
 
-<div>
-<small>Phone</small>
-<strong>+91 94560 44444</strong>
-</div>
-
-</a>
-
-
-<a class="contact-item"
-href="mailto:manoranjansingh.agra@gmail.com">
-
-<div class="contact-icon">
-✉
-</div>
-
-<div>
-<small>Email</small>
-<strong>
-manoranjansingh.agra@gmail.com
-</strong>
-</div>
-
-</a>
-
-
-<a class="contact-item"
-href="https://www.linkedin.com/in/manoranjan-singh-99737855"
-target="_blank"
-rel="noopener">
-
-<div class="contact-icon">
-in
-</div>
-
-<div>
-<small>LinkedIn</small>
-<strong>
-linkedin.com/in/manoranjan-singh-99737855
-</strong>
-</div>
-
-</a>
-
-
-<a class="contact-item"
-href="https://wa.me/919456044444"
-target="_blank"
-rel="noopener">
-
-<div class="contact-icon">
-WA
-</div>
-
-<div>
-<small>WhatsApp</small>
-<strong>
+<div class="contact-value">
 +91 94560 44444
-</strong>
 </div>
 
 </a>
 
+
+<a class="contact-item reveal"
+href="https://www.linkedin.com/in/manoranjan-singh-99737855"
+target="_blank">
+
+<div class="contact-label">
+LinkedIn
 </div>
 
+<div class="contact-value">
+linkedin.com/in/manoranjan-singh-99737855
 </div>
 
-
-<div class="card">
-
-<h3>
-Executive Profile
-</h3>
-
-<p>
-Senior transmission professional with a strong combination
-of technical execution, project planning, commercial
-coordination, resource management and stakeholder engagement.
-</p>
-
-<br>
-
-<p>
-The professional profile is particularly aligned with
-large-scale transmission EPC, TBCB, construction management
-and project delivery environments.
-</p>
-
-<div class="cta">
-
-<a class="btn primary"
-href="./Manoranjan_Singh_Resume.pdf"
-target="_blank"
-rel="noopener">
-Download Resume
 </a>
 
-<a class="btn"
-href="mailto:manoranjansingh.agra@gmail.com">
-Send Email
+
+<a class="contact-item reveal"
+href="https://wa.me/919456044444?text=Hello%20Manoranjan%20Sir%2C%20I%20visited%20your%20professional%20portfolio."
+target="_blank">
+
+<div class="contact-label">
+WhatsApp
+</div>
+
+<div class="contact-value">
+Chat on WhatsApp
+</div>
+
 </a>
-
-</div>
-
-</div>
 
 </div>
 
@@ -2309,183 +2383,269 @@ Send Email
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-<div class="container">
+<div class="container footer-row">
 
-© 2026 Manoranjan Singh
+<div>
+© 2026 Manoranjan Singh. All Rights Reserved.
+</div>
 
-<br>
-
-Power Transmission • TBCB • EPC • Project Leadership
-
-<br><br>
+<div class="socials">
 
 <a href="https://www.linkedin.com/in/manoranjan-singh-99737855"
 target="_blank"
-rel="noopener">
-LinkedIn
+aria-label="LinkedIn">
+in
 </a>
-&nbsp; • &nbsp;
 
-<a href="mailto:manoranjansingh.agra@gmail.com">
-Email
+<a href="mailto:manoranjansingh.agra@gmail.com"
+aria-label="Email">
+✉
 </a>
-&nbsp; • &nbsp;
 
-<a href="https://wa.me/919456044444"
+<a href="https://wa.me/919456044444?text=Hello%20Manoranjan%20Sir%2C%20I%20visited%20your%20professional%20portfolio."
 target="_blank"
-rel="noopener">
-WhatsApp
+aria-label="WhatsApp">
+☏
 </a>
+
+</div>
 
 </div>
 
 </footer>
 
 
-<!-- FLOATING WHATSAPP -->
+<!-- ================= FLOATING WHATSAPP ================= -->
 
-<a class="whatsapp-float"
+<a
 href="https://wa.me/919456044444?text=Hello%20Manoranjan%20Sir%2C%20I%20visited%20your%20professional%20portfolio."
+class="whatsapp-float"
 target="_blank"
-rel="noopener"
 aria-label="WhatsApp">
-WA
+☏
 </a>
 
 
 <script>
 
-/* MOBILE MENU */
+/* ================= MOBILE MENU ================= */
 
-function toggleMenu(){
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
 
-  document
-  .getElementById("navLinks")
-  .classList.toggle("open");
+menuBtn.addEventListener("click", function(){
 
-}
-
-
-/* CLOSE MENU */
-
-document
-.querySelectorAll(".nav-links a")
-.forEach(function(link){
-
-  link.addEventListener("click",function(){
-
-    document
-    .getElementById("navLinks")
-    .classList.remove("open");
-
-  });
+    navLinks.classList.toggle("open");
 
 });
 
 
-/* THEME */
+document.querySelectorAll(".nav-links a").forEach(function(link){
 
-function toggleTheme(){
+    link.addEventListener("click", function(){
 
-  document.body.classList.toggle("light");
-
-  if(document.body.classList.contains("light")){
-
-    localStorage.setItem("theme","light");
-
-  }else{
-
-    localStorage.setItem("theme","dark");
-
-  }
-
-}
-
-
-/* REMEMBER THEME */
-
-if(localStorage.getItem("theme")==="light"){
-
-  document.body.classList.add("light");
-
-}
-
-
-/* PROJECT FILTER */
-
-const filters =
-document.querySelectorAll(".filter");
-
-const projects =
-document.querySelectorAll(".project");
-
-
-filters.forEach(function(filter){
-
-  filter.addEventListener("click",function(){
-
-    filters.forEach(function(item){
-
-      item.classList.remove("active");
+        navLinks.classList.remove("open");
 
     });
-
-    filter.classList.add("active");
-
-    const selected =
-    filter.getAttribute("data-filter");
-
-    projects.forEach(function(project){
-
-      const type =
-      project.getAttribute("data-type");
-
-      if(selected==="all" || type===selected){
-
-        project.style.display="flex";
-
-      }else{
-
-        project.style.display="none";
-
-      }
-
-    });
-
-  });
 
 });
 
 
-/* SMOOTH SCROLL */
+/* ================= THEME ================= */
 
-document
-.querySelectorAll('a[href^="#"]')
-.forEach(function(anchor){
+const themeBtn = document.getElementById("themeBtn");
 
-  anchor.addEventListener("click",function(e){
+const savedTheme = localStorage.getItem("portfolioTheme");
 
-    const target =
-    document.querySelector(
-      this.getAttribute("href")
-    );
+if(savedTheme === "light"){
 
-    if(target){
+    document.body.classList.add("light");
 
-      e.preventDefault();
+    themeBtn.textContent = "☾";
 
-      target.scrollIntoView({
-        behavior:"smooth",
-        block:"start"
-      });
+}
+
+themeBtn.addEventListener("click", function(){
+
+    document.body.classList.toggle("light");
+
+    if(document.body.classList.contains("light")){
+
+        localStorage.setItem("portfolioTheme","light");
+
+        themeBtn.textContent = "☾";
+
+    }else{
+
+        localStorage.setItem("portfolioTheme","dark");
+
+        themeBtn.textContent = "☼";
 
     }
 
-  });
+});
+
+
+/* ================= PROJECT FILTER ================= */
+
+const filters = document.querySelectorAll(".filter");
+const projects = document.querySelectorAll(".project");
+
+filters.forEach(function(filter){
+
+    filter.addEventListener("click", function(){
+
+        filters.forEach(function(btn){
+            btn.classList.remove("active");
+        });
+
+        filter.classList.add("active");
+
+        const selected = filter.getAttribute("data-filter");
+
+        projects.forEach(function(project){
+
+            const category = project.getAttribute("data-category");
+
+            if(selected === "all" || category === selected){
+
+                project.style.display = "block";
+
+                setTimeout(function(){
+                    project.style.opacity = "1";
+                    project.style.transform = "translateY(0)";
+                },30);
+
+            }else{
+
+                project.style.opacity = "0";
+                project.style.transform = "translateY(15px)";
+
+                setTimeout(function(){
+                    project.style.display = "none";
+                },250);
+
+            }
+
+        });
+
+    });
+
+});
+
+
+/* ================= SCROLL REVEAL ================= */
+
+const revealElements = document.querySelectorAll(
+    ".section-head, .card, .metric, .skill, .timeline-item, .map-box, .cta, .contact-item"
+);
+
+revealElements.forEach(function(element){
+
+    element.classList.add("reveal");
+
+});
+
+
+const revealObserver = new IntersectionObserver(
+
+    function(entries){
+
+        entries.forEach(function(entry){
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold:0.12
+    }
+
+);
+
+
+document.querySelectorAll(".reveal").forEach(function(element){
+
+    revealObserver.observe(element);
+
+});
+
+
+/* ================= ACTIVE NAV ON SCROLL ================= */
+
+const sections = document.querySelectorAll("section[id]");
+const navItems = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", function(){
+
+    let current = "";
+
+    sections.forEach(function(section){
+
+        const sectionTop = section.offsetTop - 130;
+
+        if(window.scrollY >= sectionTop){
+
+            current = section.getAttribute("id");
+
+        }
+
+    });
+
+    navItems.forEach(function(link){
+
+        link.style.color = "";
+
+        if(link.getAttribute("href") === "#" + current){
+
+            link.style.color = "var(--gold)";
+
+        }
+
+    });
+
+});
+
+
+/* ================= BUTTON FLASH EFFECT ================= */
+
+document.querySelectorAll(".btn").forEach(function(button){
+
+    button.addEventListener("mouseenter", function(){
+
+        button.style.setProperty(
+            "box-shadow",
+            "0 10px 30px rgba(231,183,93,.18)"
+        );
+
+    });
+
+    button.addEventListener("mouseleave", function(){
+
+        button.style.removeProperty("box-shadow");
+
+    });
+
+});
+
+
+/* ================= YEAR ================= */
+
+const yearElements = document.querySelectorAll("[data-year]");
+
+yearElements.forEach(function(el){
+
+    el.textContent = new Date().getFullYear();
 
 });
 
