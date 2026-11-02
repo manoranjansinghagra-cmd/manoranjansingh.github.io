@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ashupriya4ever — Admin Console</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">A4</div><div><b>Ashupriya4ever</b><small>ADMIN CONSOLE</small></div></div>
+    <nav>
+      <button class="nav active" data-view="dashboard">⌂ Dashboard</button>
+      <button class="nav" data-view="products">▣ Products</button>
+      <button class="nav" data-view="orders">▤ Orders</button>
+      <button class="nav" data-view="customers">♙ Customers</button>
+      <button class="nav" data-view="offers">✦ Offers & Coupons</button>
+      <button class="nav" data-view="reports">▥ Reports</button>
+      <button class="nav" data-view="settings">⚙ Website Settings</button>
+    </nav>
+    <div class="side-note">Demo/local admin mode<br><span>Connect a secure backend before using real customer/payment data.</span></div>
+    <a class="back" href="index.html">← Open Store</a>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div><span class="eyebrow">CONTROL CENTER</span><h1 id="pageTitle">Dashboard</h1></div>
+      <div class="top-actions"><button id="exportBtn" class="btn secondary">Export Data</button><button id="resetBtn" class="btn danger">Reset Demo</button></div>
+    </header>
+
+    <section id="dashboard" class="view active">
+      <div class="cards">
+        <div class="metric"><span>Total Orders</span><strong id="mOrders">0</strong><small>All order records</small></div>
+        <div class="metric"><span>Revenue</span><strong id="mRevenue">₹0</strong><small>Delivered + paid demo orders</small></div>
+        <div class="metric"><span>Products</span><strong id="mProducts">0</strong><small>Catalog items</small></div>
+        <div class="metric"><span>Customers</span><strong id="mCustomers">0</strong><small>Unique customer records</small></div>
+      </div>
+      <div class="grid two">
+        <div class="panel"><div class="panel-head"><h2>Recent Orders</h2><button class="link-btn" data-go="orders">View all</button></div><div id="recentOrders" class="table-wrap"></div></div>
+        <div class="panel"><div class="panel-head"><h2>Low Stock</h2><button class="link-btn" data-go="products">Manage</button></div><div id="lowStock"></div></div>
+      </div>
+    </section>
+
+    <section id="products" class="view">
+      <div class="panel">
+        <div class="panel-head"><h2>Product Management</h2><button id="addProduct" class="btn gold">+ Add Product</button></div>
+        <div id="productTable" class="table-wrap"></div>
+      </div>
+    </section>
+
+    <section id="orders" class="view">
+      <div class="panel">
+        <div class="panel-head"><h2>Order Management</h2><input id="orderSearch" class="search" placeholder="Search order / customer"></div>
+        <div id="orderTable" class="table-wrap"></div>
+      </div>
+    </section>
+
+    <section id="customers" class="view">
+      <div class="panel"><div class="panel-head"><h2>Customer Management</h2></div><div id="customerTable" class="table-wrap"></div></div>
+    </section>
+
+    <section id="offers" class="view">
+      <div class="panel">
+        <div class="panel-head"><h2>Offers & Coupons</h2><button id="addCoupon" class="btn gold">+ Add Coupon</button></div>
+        <div id="couponList" class="coupon-grid"></div>
+      </div>
+    </section>
+
+    <section id="reports" class="view">
+      <div class="cards"><div class="metric"><span>Average Order</span><strong id="avgOrder">₹0</strong></div><div class="metric"><span>Pending</span><strong id="pendingCount">0</strong></div><div class="metric"><span>Delivered</span><strong id="deliveredCount">0</strong></div><div class="metric"><span>Conversion</span><strong>Demo</strong></div></div>
+      <div class="panel"><div class="panel-head"><h2>Business Summary</h2></div><div id="reportSummary" class="report-box"></div></div>
+    </section>
+
+    <section id="settings" class="view">
+      <div class="panel settings-panel">
+        <div class="panel-head"><h2>Website Settings</h2><button id="saveSettings" class="btn gold">Save Settings</button></div>
+        <div class="form-grid">
+          <label>Store Name<input id="sName" value="Ashupriya4ever"></label>
+          <label>WhatsApp Number<input id="sWhatsapp" placeholder="+91 XXXXX XXXXX"></label>
+          <label>Support Email<input id="sEmail" placeholder="support@example.com"></label>
+          <label>Instagram URL<input id="sInstagram" value="https://www.instagram.com/ashupriya4ever/"></label>
+          <label>YouTube URL<input id="sYoutube" value="https://youtube.com/@ashupriya4ever739"></label>
+          <label>Facebook URL<input id="sFacebook" placeholder="Facebook URL"></label>
+          <label>Currency<select id="sCurrency"><option>INR (₹)</option><option>USD ($)</option></select></label>
+          <label>Store Status<select id="sStatus"><option>Open</option><option>Maintenance</option></select></label>
+        </div>
+        <div class="notice">These settings are saved locally in this demo. For a live store, they should be stored in a secure database.</div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div id="modal" class="modal hidden"><div class="modal-box"><div class="modal-head"><h2 id="modalTitle">Add</h2><button id="closeModal">×</button></div><div id="modalBody"></div></div></div>
+<div id="toast" class="toast"></div>
+<script src="admin.js"></script>
+</body>
+</html>
