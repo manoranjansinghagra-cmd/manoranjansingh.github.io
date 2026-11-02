@@ -1,14 +1,28 @@
-MANORANJAN SINGH — CONSTRUCTION / EPC WEBSITE
+ASHUPRIYA4EVER PREMIUM WEBSITE V5
 
-GitHub Pages ready static website.
+Included:
+- Cinematic premium homepage
+- Official YouTube latest-upload embed attempt
+- Dedicated Videos & Shorts page
+- YouTube subscribe CTA
+- Instagram + Facebook integration
+- Gallery ready for real photographs
+- WhatsApp share button
+- Responsive mobile/desktop design
+- Premium gold + deep-wine theme
+- Supplied Ashupriya4ever logo
 
-Upload the CONTENTS of this folder to your GitHub repository root.
-Keep the assets folder beside index.html.
+Official links:
+YouTube: https://www.youtube.com/@ashupriya4ever739
+Instagram: https://www.instagram.com/ashupriya4ever/
+Facebook: https://www.facebook.com/share/18zzx9UyUu/
 
-Main file: index.html
-Resume: assets/Manoranjan_Singh_Resume.pdf
-Images: assets/transmission-01.jpg, transmission-02.jpg, transmission-03.jpg
+IMPORTANT:
+The YouTube embedded latest-upload feed depends on YouTube's current embed support. If YouTube blocks that feed in a browser, the direct Videos/Shorts buttons still open the official channel.
 
-No external libraries, build tools or paid hosting are required.
+To personalise the gallery, replace the six placeholders in gallery.html with image files.
 
-For a separate corporate domain later, you can add a CNAME file and configure the domain in GitHub Pages settings.
+V6 UPDATE:
+- Added 8 user-provided photos to assets/photos/
+- Homepage now has a real featured photo and photo strip
+- Gallery now uses all 8 uploaded photos with premium masonry layout
