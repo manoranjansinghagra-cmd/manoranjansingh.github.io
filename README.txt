@@ -1,14 +1,8 @@
-ASHUPRIYA4EVER PREMIUM WEBSITE V3 — FIXED
-=============================================
-
-Based on the earlier working premium website.
-
-FIXES:
-- Restored multi-page structure: Home, About, Gallery, Videos, Contact.
-- Logo and all 8 supplied photos stored locally.
-- Removed fragile embedded YouTube iframe.
-- YouTube / Instagram / Facebook buttons use direct external links.
-- Mobile + desktop responsive.
-- No external font dependency required for core functionality.
-
-Keep the complete folder structure when uploading to hosting.
+Ashupriya4ever FINAL Website
+- Real supplied photos included locally in assets/photos/
+- Supplied logo included locally in assets/
+- YouTube: https://www.youtube.com/@ashupriya4ever739
+- Instagram: https://www.instagram.com/ashupriya4ever/
+- Facebook: https://www.facebook.com/share/18zzx9UyUu/
+- index.html is the main page.
+- preview.html is a self-contained live-preview style page with images embedded, useful for checking before deployment.
