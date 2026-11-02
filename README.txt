@@ -1,8 +1,27 @@
-Ashupriya4ever FINAL Website
-- Real supplied photos included locally in assets/photos/
-- Supplied logo included locally in assets/
-- YouTube: https://www.youtube.com/@ashupriya4ever739
-- Instagram: https://www.instagram.com/ashupriya4ever/
-- Facebook: https://www.facebook.com/share/18zzx9UyUu/
-- index.html is the main page.
-- preview.html is a self-contained live-preview style page with images embedded, useful for checking before deployment.
+ASHUPRIYA4EVER — WORKING PREMIUM WEBSITE
+==========================================
+
+This package is built from the earlier working premium version and enhanced carefully.
+
+CORE:
+- Home / About / Gallery / Videos / Contact
+- Original logo + 8 supplied photos
+- YouTube / Instagram / Facebook direct links
+- Reliable YouTube page without fragile embedded player
+- Responsive mobile/desktop navigation
+- Gallery lightbox
+- Scroll animations
+- Share button support where available
+- Future-ready content.json
+
+IMPORTANT:
+Keep the folder structure exactly as supplied when uploading:
+index.html
+about.html
+gallery.html
+videos.html
+contact.html
+style.css
+assets/
+
+For public hosting, upload the COMPLETE folder contents to Netlify, GitHub Pages, Vercel or another static host.
