@@ -1,96 +1,29 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#120b0e">
-<meta name="description" content="Ashupriya4ever — premium creator and social platform">
-<title>Ashupriya4ever — Premium Creator Platform</title>
-<style>
-:root{--bg:#090609;--card:#151016;--card2:#1d141b;--gold:#e8c46a;--gold2:#fff0b0;--text:#fff8f0;--muted:#c9b8be;--wine:#5d1636;--line:rgba(232,196,106,.22);--shadow:0 20px 60px rgba(0,0,0,.38)}
-*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(circle at 10% 0%,#321426 0,#090609 35%),#090609;color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
-a{color:inherit;text-decoration:none} button{font:inherit}
-.nav{position:sticky;top:0;z-index:20;background:rgba(9,6,9,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.navin{max-width:1180px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;font-family:Georgia,serif;font-size:20px;font-weight:700} .brand img{width:42px;height:42px;object-fit:cover;border-radius:50%;border:1px solid var(--gold)}
-.links{display:flex;gap:18px;font-size:13px;color:#eadde0} .links a:hover{color:var(--gold)} .navcta{padding:10px 16px;border:1px solid var(--gold);border-radius:999px;color:var(--gold)}
-.hero{min-height:78vh;display:grid;place-items:center;padding:70px 20px 60px;position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,6,9,.95),rgba(9,6,9,.35),rgba(9,6,9,.92));}
-.heroimg{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;opacity:.23;filter:saturate(.8)} .heroimg img{width:100%;height:100%;object-fit:cover}
-.heroin{position:relative;z-index:2;max-width:1050px;text-align:center}
-.logo{width:min(420px,78vw);max-height:220px;object-fit:contain;filter:drop-shadow(0 18px 40px #000);margin-bottom:14px}
-.eyebrow{letter-spacing:4px;text-transform:uppercase;color:var(--gold);font-size:12px} h1{font:700 clamp(42px,7vw,86px)/.95 Georgia,serif;margin:12px 0;background:linear-gradient(90deg,#fff4c4,var(--gold),#fff);-webkit-background-clip:text;color:transparent}
-.lead{max-width:700px;margin:20px auto;color:#e4d7dc;font-size:18px;line-height:1.7}
-.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:28px} .btn{padding:13px 20px;border-radius:999px;border:1px solid var(--line);background:#ffffff08} .btn.primary{background:linear-gradient(135deg,var(--gold),#9b6b20);color:#180d10;border:0;font-weight:800}
-.socials{display:flex;justify-content:center;gap:10px;margin-top:22px} .socials a{padding:9px 13px;border:1px solid var(--line);border-radius:999px;color:var(--gold);font-size:13px}
-.section{max-width:1180px;margin:auto;padding:82px 20px} .kicker{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:11px} h2{font:700 42px Georgia,serif;margin:10px 0 12px} .sub{color:var(--muted);max-width:720px;line-height:1.7}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px} .card{background:linear-gradient(180deg,#1b1219,#100b0f);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)} 
-.photo{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;cursor:pointer;transition:.4s} .card:hover .photo{transform:scale(1.025)} .caption{padding:14px;color:#e9dfe2}
-.featuregrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px} .feature{padding:24px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#1b1118,#0f0a0e)} .icon{font-size:28px} .feature h3{margin:10px 0 8px} .feature p{color:var(--muted);line-height:1.6;font-size:14px}
-.videoGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px} .video{padding:22px;border:1px solid var(--line);border-radius:20px;background:#140d12} .play{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#140d12;font-weight:900;font-size:20px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px} .stat{text-align:center;padding:24px;border:1px solid var(--line);border-radius:18px;background:#120b10} .stat b{display:block;font:700 30px Georgia,serif;color:var(--gold)} .stat span{color:var(--muted);font-size:12px}
-.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:20px} form{display:grid;gap:12px} input,textarea{width:100%;background:#0d080c;border:1px solid var(--line);color:white;padding:14px;border-radius:12px} textarea{min-height:130px;resize:vertical}
-.footer{border-top:1px solid var(--line);padding:30px 20px;color:var(--muted);text-align:center} .gold{color:var(--gold)}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;place-items:center;z-index:50;padding:20px} .modal.open{display:grid} .modal img{max-width:95vw;max-height:88vh;object-fit:contain;border-radius:14px} .close{position:fixed;top:18px;right:20px;font-size:32px;color:white;cursor:pointer}
-@media(max-width:850px){.links{display:none}.grid{grid-template-columns:repeat(2,1fr)}.featuregrid,.videoGrid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}.heroimg{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.grid{grid-template-columns:1fr 1fr;gap:9px}h2{font-size:34px}.section{padding:58px 16px}}
-</style>
-</head>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#300010"><link rel="icon" href="assets/favicon.png"><title>Ashupriya4ever | Official Website</title><link rel="stylesheet" href="style.css"></head>
 <body>
-<header class="nav"><div class="navin">
-<a class="brand" href="#"><img src="assets/ashupriya4ever-logo.png" alt="Ashupriya4ever logo">Ashupriya4ever</a>
-<nav class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#videos">Videos</a><a href="#connect">Connect</a></nav>
-<a class="navcta" href="https://youtube.com/@ashupriya4ever739" target="_blank">YouTube ↗</a>
-</div></header>
-
-<section class="hero" id="home">
-<div class="heroimg"><img src="assets/photos/ashupriya-1.jpg" alt="Ashupriya4ever photo"><img src="assets/photos/ashupriya-2.jpg" alt="Ashupriya4ever photo"><img src="assets/photos/ashupriya-3.jpg" alt="Ashupriya4ever photo"><img src="assets/photos/ashupriya-4.jpg" alt="Ashupriya4ever photo"></div>
-<div class="heroin">
-<img class="logo" src="assets/ashupriya4ever-logo.png" alt="Ashupriya4ever premium logo">
-<div class="eyebrow">Official Creator • Lifestyle • Memories</div>
-<h1>Ashupriya4ever</h1>
-<p class="lead">A premium online home for photos, videos, stories, celebrations and social moments — designed to grow into a complete creator platform.</p>
-<div class="actions"><a class="btn primary" href="#gallery">Explore Gallery</a><a class="btn" href="https://youtube.com/@ashupriya4ever739" target="_blank">Watch on YouTube</a><a class="btn" href="#connect">Connect With Us</a></div>
-<div class="socials"><a href="https://www.instagram.com/ashupriya4ever/" target="_blank">Instagram</a><a href="https://www.facebook.com/share/18zzx9UyUu/" target="_blank">Facebook</a><a href="https://youtube.com/@ashupriya4ever739" target="_blank">YouTube</a></div>
-</div></section>
-
-<section class="section" id="about"><div class="kicker">Built for the future</div><h2>One premium place for everything</h2><p class="sub">This version is designed as a scalable online platform. New pages, content, campaigns, videos, events, products, collaborations and contact features can be added later without changing the overall look.</p>
-<div class="featuregrid">
-<div class="feature"><div class="icon">✨</div><h3>Premium Brand Look</h3><p>Luxury gold, wine and black visual identity with mobile-first responsive layout.</p></div>
-<div class="feature"><div class="icon">🎬</div><h3>Video Ready</h3><p>Dedicated YouTube, Shorts and future video sections with direct social buttons.</p></div>
-<div class="feature"><div class="icon">🖼️</div><h3>Smart Gallery</h3><p>Large photos, category-ready structure and click-to-view lightbox experience.</p></div>
-<div class="feature"><div class="icon">📱</div><h3>Social Hub</h3><p>Instagram, Facebook and YouTube links in one clean destination.</p></div>
-<div class="feature"><div class="icon">📝</div><h3>Blog / Stories</h3><p>Ready space for articles, travel stories, celebrations, updates and announcements.</p></div>
-<div class="feature"><div class="icon">💌</div><h3>Contact & Enquiry</h3><p>Ready structure for enquiries, collaborations, WhatsApp, email and future forms.</p></div>
-</div>
-</section>
-
-<section class="section" id="gallery"><div class="kicker">Visual journal</div><h2>Featured Gallery</h2><p class="sub">Your latest photos are included directly in this preview. Tap any image to open it large.</p>
-<div class="grid"><div class="card"><img class="photo" src="assets/photos/ashupriya-1.jpg" alt="Ashupriya4ever gallery photo 1" onclick="openImg(this.src)"><div class="caption">Memory #01 · Ashupriya4ever</div></div><div class="card"><img class="photo" src="assets/photos/ashupriya-2.jpg" alt="Ashupriya4ever gallery photo 2" onclick="openImg(this.src)"><div class="caption">Memory #02 · Ashupriya4ever</div></div><div class="card"><img class="photo" src="assets/photos/ashupriya-3.jpg" alt="Ashupriya4ever gallery photo 3" onclick="openImg(this.src)"><div class="caption">Memory #03 · Ashupriya4ever</div></div><div class="card"><img class="photo" src="assets/photos/ashupriya-4.jpg" alt="Ashupriya4ever gallery photo 4" onclick="openImg(this.src)"><div class="caption">Memory #04 · Ashupriya4ever</div></div><div class="card"><img class="photo" src="assets/photos/ashupriya-5.jpg" alt="Ashupriya4ever gallery photo 5" onclick="openImg(this.src)"><div class="caption">Memory #05 · Ashupriya4ever</div></div><div class="card"><img class="photo" src="assets/photos/ashupriya-6.jpg" alt="Ashupriya4ever gallery photo 6" onclick="openImg(this.src)"><div class="caption">Memory #06 · Ashupriya4ever</div></div><div class="card"><img class="photo" src="assets/photos/ashupriya-7.jpg" alt="Ashupriya4ever gallery photo 7" onclick="openImg(this.src)"><div class="caption">Memory #07 · Ashupriya4ever</div></div><div class="card"><img class="photo" src="assets/photos/ashupriya-8.jpg" alt="Ashupriya4ever gallery photo 8" onclick="openImg(this.src)"><div class="caption">Memory #08 · Ashupriya4ever</div></div></div></section>
-
-<section class="section" id="videos"><div class="kicker">Watch & follow</div><h2>Video & Social Studio</h2><p class="sub">The structure is ready for YouTube videos, Shorts, reels, live sessions and future embedded content.</p>
-<div class="videoGrid">
-<div class="video"><div class="play">▶</div><h3>YouTube Channel</h3><p class="sub">Open the complete channel and latest uploads.</p><a class="gold" href="https://youtube.com/@ashupriya4ever739" target="_blank">Open Channel →</a></div>
-<div class="video"><div class="play">▶</div><h3>YouTube Shorts</h3><p class="sub">A dedicated place for short-form videos and viral moments.</p><a class="gold" href="https://www.youtube.com/@ashupriya4ever739/shorts" target="_blank">Open Shorts →</a></div>
-<div class="video"><div class="play">◎</div><h3>Instagram</h3><p class="sub">Connect the visual feed and future reels directly.</p><a class="gold" href="https://www.instagram.com/ashupriya4ever/" target="_blank">Open Instagram →</a></div>
-</div>
-</section>
-
-<section class="section"><div class="kicker">Platform roadmap</div><h2>Ready to add next</h2><div class="stats">
-<div class="stat"><b>01</b><span>Blog & Stories</span></div><div class="stat"><b>02</b><span>Events Calendar</span></div><div class="stat"><b>03</b><span>Newsletter</span></div><div class="stat"><b>04</b><span>Shop / Products</span></div>
-<div class="stat"><b>05</b><span>Collaboration Form</span></div><div class="stat"><b>06</b><span>Member Area</span></div><div class="stat"><b>07</b><span>Analytics</span></div><div class="stat"><b>08</b><span>Admin CMS</span></div>
-</div></section>
-
-<section class="section" id="connect"><div class="kicker">Stay connected</div><h2>Connect with Ashupriya4ever</h2><div class="contact">
-<div class="feature"><h3>Social Links</h3><p class="sub">Use the buttons below to visit the official social profiles.</p><div class="actions" style="justify-content:flex-start"><a class="btn primary" href="https://youtube.com/@ashupriya4ever739" target="_blank">YouTube</a><a class="btn" href="https://www.instagram.com/ashupriya4ever/" target="_blank">Instagram</a><a class="btn" href="https://www.facebook.com/share/18zzx9UyUu/" target="_blank">Facebook</a></div></div>
-<div class="feature"><h3>Future Enquiry Form</h3><form onsubmit="event.preventDefault();alert('Demo form — connect this to email/Formspree/Google Forms/CMS later.');"><input placeholder="Your Name"><input type="email" placeholder="Email"><textarea placeholder="Message / Collaboration"></textarea><button class="btn primary" type="submit">Send Enquiry</button></form></div>
-</div></section>
-
-<footer class="footer">© 2026 <span class="gold">Ashupriya4ever</span> · Premium Creator Platform · Built to grow</footer>
-<div class="modal" id="modal" onclick="closeImg()"><span class="close">×</span><img id="modalImg" alt="Expanded gallery image"></div>
-<script>
-function openImg(src){document.getElementById('modalImg').src=src;document.getElementById('modal').classList.add('open')}
-function closeImg(){document.getElementById('modal').classList.remove('open')}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeImg()})
-</script>
+<nav><a class="brand" href="index.html">Ashupriya4ever</a><div class="navlinks">
+<a class="active" href="index.html">⌂ Home</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="videos.html">Videos</a><a href="#social">Social Media</a><a href="contact.html">Contact</a></div></nav>
+<header class="hero"><div class="wrap hero-grid"><div class="hero-copy"><div class="eyebrow">The Official Digital Home</div><h1>Ashupriya4ever</h1><h2>OFFICIAL WEBSITE</h2><p>Lifestyle • Family • Travel • Celebration • Daily Vlogs</p><p>Welcome to the official Ashupriya4ever space — bringing beautiful memories, videos and social connections together in one premium destination.</p>
+<div class="social-buttons"><a class="btn yt" href="https://www.youtube.com/@ashupriya4ever739" target="_blank">▶ YouTube</a><a class="btn ig" href="https://www.instagram.com/ashupriya4ever/" target="_blank">◎ Instagram</a><a class="btn fb" href="https://www.facebook.com/share/18zzx9UyUu/" target="_blank">f Facebook</a></div></div>
+<div class="logo-card"><img src="assets/ashupriya4ever-logo.png" alt="Ashupriya4ever Official Logo"></div></div></header>
+<div class="gold-wave"></div>
+<section><div class="wrap"><div class="stats"><div class="stat"><b>▶</b><span>YouTube</span></div><div class="stat"><b>◎</b><span>Instagram</span></div><div class="stat"><b>f</b><span>Facebook</span></div><div class="stat"><b>♥</b><span>Growing Family</span></div></div></div></section>
+<section><div class="wrap"><div class="section-head"><div><div class="kicker">Memories</div><h2>Photo Gallery</h2></div><a class="btn ghost" href="gallery.html">View All →</a></div>
+<div class="gallery-grid">
+<a href="gallery.html"><img src="assets/photos/ashupriya-1.jpg" alt="Mountain memory"></a><a href="gallery.html"><img src="assets/photos/ashupriya-2.jpg" alt="Travel couple"></a><a href="gallery.html"><img src="assets/photos/ashupriya-3.jpg" alt="Traditional portrait"></a><a href="gallery.html"><img src="assets/photos/ashupriya-4.jpg" alt="Celebration group"></a><a href="gallery.html"><img src="assets/photos/ashupriya-5.jpg" alt="Special recognition"></a><a href="gallery.html"><img src="assets/photos/ashupriya-6.jpg" alt="Couple portrait"></a><a href="gallery.html"><img src="assets/photos/ashupriya-7.jpg" alt="Mehndi detail"></a><a href="gallery.html"><img src="assets/photos/ashupriya-8.jpg" alt="Family travel"></a>
+</div></div></section>
+<section><div class="wrap"><div class="section-head"><div><div class="kicker">Watch</div><h2>Latest YouTube Videos</h2></div><a class="btn ghost" href="https://www.youtube.com/@ashupriya4ever739/videos" target="_blank">Watch More →</a></div>
+<div class="video-grid">
+<div class="video-card"><img src="assets/photos/ashupriya-3.jpg"><div class="body"><h3>Celebration & Traditional Moments</h3><p>Watch the official channel for the latest uploads.</p><a class="goldlink btn primary" href="https://www.youtube.com/@ashupriya4ever739/videos" target="_blank">▶ Watch on YouTube</a></div></div>
+<div class="video-card"><img src="assets/photos/ashupriya-1.jpg"><div class="body"><h3>Family Trip & Snowy Mountains</h3><p>Travel memories and family moments.</p><a class="goldlink btn primary" href="https://www.youtube.com/@ashupriya4ever739/videos" target="_blank">▶ Watch Videos</a></div></div>
+<div class="video-card"><img src="assets/photos/ashupriya-4.jpg"><div class="body"><h3>Beauty & Celebration</h3><p>Special events and memorable occasions.</p><a class="goldlink btn primary" href="https://www.youtube.com/@ashupriya4ever739/shorts" target="_blank">▶ Watch Shorts</a></div></div>
+<div class="video-card"><img src="assets/photos/ashupriya-2.jpg"><div class="body"><h3>Travel With Family</h3><p>Explore the latest content on the official channel.</p><a class="goldlink btn primary" href="https://www.youtube.com/@ashupriya4ever739" target="_blank">▶ Visit Channel</a></div></div>
+</div></div></section>
+<section id="social"><div class="wrap"><div class="kicker">Stay Connected</div><h2>Follow Us On</h2><div class="social-grid">
+<div class="social-card yt"><h3>▶ YouTube</h3><p>@ashupriya4ever739</p><a class="btn primary" href="https://www.youtube.com/@ashupriya4ever739?sub_confirmation=1" target="_blank">Subscribe →</a></div>
+<div class="social-card ig"><h3>◎ Instagram</h3><p>@ashupriya4ever</p><a class="btn primary" href="https://www.instagram.com/ashupriya4ever/" target="_blank">Follow →</a></div>
+<div class="social-card fb"><h3>f Facebook</h3><p>Ashupriya4ever Official</p><a class="btn primary" href="https://www.facebook.com/share/18zzx9UyUu/" target="_blank">Like & Follow →</a></div>
+</div></div></section>
+<footer><div class="footerbrand">Ashupriya4ever♥</div><div>Lifestyle | Family | Travel | Celebration | Daily Vlogs</div><div style="margin-top:8px">© 2026 Ashupriya4ever • Official Website</div></footer>
 </body></html>

@@ -1,18 +1,14 @@
-ASHUPRIYA4EVER PREMIUM PLATFORM V2
-=================================
+ASHUPRIYA4EVER PREMIUM WEBSITE V3 — FIXED
+=============================================
 
-Included:
-- Premium responsive home page
-- Real logo + 8 supplied photos
-- Gallery lightbox
-- YouTube / Instagram / Facebook buttons
-- Video / Shorts section
-- Future-ready sections for blog, events, newsletter, shop, collaborations, member area, analytics and CMS
-- Demo enquiry form ready to connect to a backend/form service
-- Mobile + desktop responsive
-- preview.html is fully self-contained for quick local preview
+Based on the earlier working premium website.
 
-To publish:
-1. Upload the complete folder contents to Netlify, GitHub Pages, Vercel, or any normal web host.
-2. Keep the assets folder together with index.html.
-3. Replace/add future content without changing the overall design.
+FIXES:
+- Restored multi-page structure: Home, About, Gallery, Videos, Contact.
+- Logo and all 8 supplied photos stored locally.
+- Removed fragile embedded YouTube iframe.
+- YouTube / Instagram / Facebook buttons use direct external links.
+- Mobile + desktop responsive.
+- No external font dependency required for core functionality.
+
+Keep the complete folder structure when uploading to hosting.
